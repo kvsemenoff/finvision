@@ -34,3 +34,51 @@
 	<script>
     	new WOW().init();
     </script>
+
+    <section class="header">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12 col-md-push-12 col-xs-2 col-ms-2">
+    				<nav>
+    					<ul class="main-menu">
+    						<li><a href="#">О компании</a></li>
+    						<li><a href="#">Каталог</a></li>
+    						<li><a href="#">Интернет-магазин</a></li>
+    						<li><a href="#">Оптовикам</a></li>
+    					</ul>
+    				</nav>
+    			</div>
+    			<div class="col-md-12 col-md-pull-12">
+    				<div class="row">
+    					<div class="col-md-6 ">
+
+		    				<div class="ho-logo-box">
+		    					<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
+		    				</div>
+		    				<div class="ho-slogan">
+		    					Финский производитель<br>
+								видеорегистраторов
+		    				</div>
+
+		    			</div>
+		    			<div class="col-md-3 ">
+		    				<div class="ho-lang-box">
+		    					<span>Выберите язык:</span>
+		    					<a href="#" class="fin">FIN</a>
+		    					<a href="#" class="eng">ENG</a>
+		    					<a href="#" class="rus">Рус</a>
+		    				</div>
+		    				
+		    			</div>
+		    			<div class="col-md-3 ">
+		    				<div class="ho-contact-box">
+		    					<span class="tel">+7 (499) 324 - 54 -54</span>
+		    					<a href="#zvonok" name="modal">Заказать консультацию</a>
+		    				</div>
+		    			</div>
+	    			</div>
+	    		</div>
+    			
+    		</div>
+    	</div>
+    </section>

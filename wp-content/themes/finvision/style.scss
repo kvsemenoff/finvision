@@ -59,6 +59,74 @@ strong{
 	margin: 0 auto;
 }
 
+.ho-logo-box{
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 6px;
+}
+.ho-slogan{
+    display: table-cell;
+    vertical-align: middle;
+    color: #1c4c91;
+    font-family: "RobotoRegular";
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: .02em;
+    padding-left: 32px;
+
+}
+.ho-lang-box{
+    padding-top: 7px;
+    span{
+        display: block;
+        color: #303030;
+        font-size: 13px;
+        letter-spacing: .02em;
+        font-family: "RobotoLight";
+        margin-bottom: 7px;
+    }
+    a{
+        display: inline-block;
+
+        font-family: "RobotoMedium";
+        font-size: 11px;
+        color: #333333;
+        text-decoration: none;
+        padding-left: 35px;
+        margin-right: 15px;
+    }
+    .fin{
+        background: url(./img/fin.png) no-repeat left center;
+    }
+    .eng{
+        background: url(./img/en.png) no-repeat left center;
+    }
+    .rus{
+        background: url(./img/rus.png) no-repeat left center;
+    }
+}
+.ho-contact-box{
+    text-align: right;
+    padding-top: 5px;
+    .tel{
+        display: inline-block;
+        color: #303030;
+        font-family: "RobotoRegular";
+        font-size: 22px;
+        letter-spacing: .02em;
+        background: url(./img/phone_ico.png) no-repeat left center;
+        padding-left: 35px;
+    }
+    a{
+        display: inline-block;
+        color: #17488d;
+        font-family: "RobotoRegular";
+        font-size: 16px;
+        letter-spacing: .02em;
+        text-decoration: underline;
+        margin-top: 3px;
+    }
+}
 
 /*==========  Desktop First Method  ==========*/
 
@@ -116,7 +184,7 @@ strong{
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     //padding: 0px;
     //margin: 0px;
-    //outline: 15px solid blue;
+    outline: 1px solid red;
     //outline: none !important;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
