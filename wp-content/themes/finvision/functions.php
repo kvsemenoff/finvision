@@ -66,25 +66,25 @@ function repl_mon( $str ){
 
 
 
-add_action('init', 'catalog_register');
-function catalog_register() {
+add_action('init', 'tovar_register');
+function tovar_register() {
     $args = array(
-        'label'               => __('Каталог'),
+        'label'               => __('Товар'),
         'labels'              => array(
-            'name'               => __('Каталог'),
-            'singular_name'      => __('Каталог'),
-            'menu_name'          => __('Каталог'),
-            'all_items'          => __('Все каталоги'),
-            'add_new'            => _x('Добавить каталог', 'product'),
-            'add_new_item'       => __('Новый каталог'),
-            'edit_item'          => __('Редактировать каталог'),
-            'new_item'           => __('Новый каталог'),
-            'view_item'          => __('Каталог'),
-            'not_found'          => __('каталог не найден'),
-            'not_found_in_trash' => __('Удаленных каталогов нет'),
-            'search_items'       => __('Найти каталог')
+            'name'               => __('Товар'),
+            'singular_name'      => __('Товар'),
+            'menu_name'          => __('Товар'),
+            'all_items'          => __('Все товары'),
+            'add_new'            => _x('Добавить товар', 'tovar'),
+            'add_new_item'       => __('Новый товар'),
+            'edit_item'          => __('Редактировать товар'),
+            'new_item'           => __('Новый товар'),
+            'view_item'          => __('Товар'),
+            'not_found'          => __('Товар не найден'),
+            'not_found_in_trash' => __('Удаленных товаров нет'),
+            'search_items'       => __('Найти товар')
         ),
-        'description'         => __('Каталог'),
+        'description'         => __('Товар'),
         'public'              => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
@@ -106,7 +106,7 @@ function catalog_register() {
             'with_front' => false
         )
     );
-    register_post_type('catalog', $args);
+    register_post_type('tovar', $args);
 }
 
 
