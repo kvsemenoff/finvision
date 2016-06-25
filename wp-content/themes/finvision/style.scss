@@ -58,7 +58,9 @@ strong{
 	text-align: center;
 	margin: 0 auto;
 }
-
+.header{
+    padding: 20px 0px;
+}
 .ho-logo-box{
     display: table-cell;
     vertical-align: middle;
@@ -127,7 +129,30 @@ strong{
         margin-top: 3px;
     }
 }
-
+.header-nav{
+    width: 100%;
+    height: 75px;
+    background: url(./img/nab_bg.png) repeat-x top center;
+}
+.main-menu{
+    li{
+        display: inline-block;
+        line-height: 75px;
+        
+        a{
+            display: inline-block;
+            padding-left: 60px;
+             padding-right: 60px;
+            font-family: "RobotoBold";
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        a:hover{
+            background: url(./img/nav_hover.png) repeat-x top center;
+        }
+    }
+}
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -184,7 +209,7 @@ strong{
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     //padding: 0px;
     //margin: 0px;
-    outline: 1px solid red;
+    //outline: 1px solid red;
     //outline: none !important;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {

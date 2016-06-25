@@ -50,6 +50,9 @@ q:before, q:after {
   text-align: center;
   margin: 0 auto; }
 
+.header {
+  padding: 20px 0px; }
+
 .ho-logo-box {
   display: table-cell;
   vertical-align: middle;
@@ -109,6 +112,25 @@ q:before, q:after {
     text-decoration: underline;
     margin-top: 3px; }
 
+.header-nav {
+  width: 100%;
+  height: 75px;
+  background: url(./img/nab_bg.png) repeat-x top center; }
+
+.main-menu li {
+  display: inline-block;
+  line-height: 75px; }
+  .main-menu li a {
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: "RobotoBold";
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .main-menu li a:hover {
+    background: url(./img/nav_hover.png) repeat-x top center; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -122,7 +144,5 @@ q:before, q:after {
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
 /***************/
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-  outline: 1px solid red; }
 
 /*# sourceMappingURL=style.css.map */
