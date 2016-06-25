@@ -92,6 +92,63 @@ q:before, q:after {
   .ho-lang-box .rus {
     background: url(./img/rus.png) no-repeat left center; }
 
+.ho-lang-box-pop {
+  padding-top: 55px; }
+  .ho-lang-box-pop span {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: .02em;
+    font-family: "RobotoLight";
+    margin-bottom: 0px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 30px; }
+  .ho-lang-box-pop a {
+    display: inline-block;
+    font-family: "RobotoMedium";
+    font-size: 11px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 35px;
+    margin-right: 15px;
+    margin-top: -7px; }
+  .ho-lang-box-pop .fin {
+    background: url(./img/fin.png) no-repeat left center; }
+  .ho-lang-box-pop .eng {
+    background: url(./img/en.png) no-repeat left center; }
+  .ho-lang-box-pop .rus {
+    background: url(./img/rus.png) no-repeat left center; }
+
+.ho-lang-box-footer {
+  text-align: right; }
+  .ho-lang-box-footer span {
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: .02em;
+    font-family: "RobotoLight";
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: -30px;
+    margin-right: 115px; }
+  .ho-lang-box-footer a {
+    display: inline-block;
+    font-family: "RobotoMedium";
+    font-size: 11px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 35px;
+    margin-right: 15px;
+    margin-top: -7px; }
+  .ho-lang-box-footer .fin {
+    background: url(./img/fin.png) no-repeat left center; }
+  .ho-lang-box-footer .eng {
+    background: url(./img/en.png) no-repeat left center; }
+  .ho-lang-box-footer .rus {
+    background: url(./img/rus.png) no-repeat left center; }
+
 .ho-contact-box {
   text-align: right;
   padding-top: 5px; }
@@ -102,10 +159,31 @@ q:before, q:after {
     font-size: 22px;
     letter-spacing: .02em;
     background: url(./img/phone_ico.png) no-repeat left center;
-    padding-left: 35px; }
+    padding-left: 35px;
+    white-space: nowrap; }
   .ho-contact-box a {
     display: inline-block;
     color: #17488d;
+    font-family: "RobotoRegular";
+    font-size: 16px;
+    letter-spacing: .02em;
+    text-decoration: underline;
+    margin-top: 3px; }
+
+.ho-contact-box-pop {
+  text-align: center;
+  padding-top: 35px; }
+  .ho-contact-box-pop .tel {
+    display: inline-block;
+    color: #fff;
+    font-family: "RobotoRegular";
+    font-size: 16px;
+    letter-spacing: .02em;
+    background: url(./img/phone_ico2.png) no-repeat left center;
+    padding-left: 30px; }
+  .ho-contact-box-pop a {
+    display: inline-block;
+    color: #a0c0ec;
     font-family: "RobotoRegular";
     font-size: 16px;
     letter-spacing: .02em;
@@ -117,23 +195,399 @@ q:before, q:after {
   height: 75px;
   background: url(./img/nab_bg.png) repeat-x top center; }
 
-.main-menu li {
-  display: inline-block;
-  line-height: 75px; }
-  .main-menu li a {
+.main-menu {
+  font-size: 0px;
+  text-align: center; }
+  .main-menu li {
     display: inline-block;
-    padding-left: 60px;
-    padding-right: 60px;
+    line-height: 75px; }
+    .main-menu li a {
+      display: inline-block;
+      padding-left: 60px;
+      padding-right: 60px;
+      font-family: "RobotoBold";
+      color: #fff;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative; }
+    .main-menu li a:hover {
+      background: url(./img/nav_hover.png) repeat-x top center; }
+    .main-menu li a:before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 75px;
+      left: 0px;
+      top: 0px;
+      background: url(./img/menu_sep.png) no-repeat; }
+  .main-menu li:last-child a:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 75px;
+    right: 0px;
+    top: 0px;
+    background: url(./img/menu_sep.png) no-repeat; }
+
+.main-menu-pop {
+  text-align: left;
+  margin-top: 50px; }
+  .main-menu-pop li {
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    padding: 0px;
+    border-top: 1px solid #171f2b; }
+    .main-menu-pop li a {
+      display: block;
+      font-family: "RobotoBold";
+      letter-spacing: .03em;
+      color: #fff;
+      font-size: 15px;
+      height: 54px;
+      line-height: 54px;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      padding-left: 30px; }
+    .main-menu-pop li a:hover {
+      color: #a0c0ec; }
+  .main-menu-pop li:last-child {
+    border-bottom: 1px solid #171f2b; }
+
+/*menu*/
+@keyframes shadow1 {
+  from {
+    left: -310px; }
+  to {
+    left: 0px; } }
+@keyframes shadow2 {
+  from {
+    left: 0px; }
+  to {
+    left: -310px; } }
+#check_1 {
+  display: none; }
+
+#check_1:checked ~ .menu-list-pressed {
+  animation: shadow1  1s 1 ease-in-out;
+  left: 0px; }
+
+#check_1 ~ .menu-list-pressed {
+  animation: shadow2  0s 1 ease-in-out;
+  left: -310px; }
+
+#check_1 ~ .anz-menu-ch .fa-bars {
+  display: block; }
+
+#check_1 ~ .anz-menu-ch .fa-times {
+  display: none; }
+
+#check_1:checked ~ .anz-menu-ch .fa-bars {
+  display: none; }
+
+#check_1:checked ~ .anz-menu-ch .fa-times {
+  display: block; }
+
+.menu-list-pressed {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  top: 0px;
+  z-index: 10000;
+  color: #fff;
+  background: #252f3e; }
+
+.anz-menu {
+  cursor: pointer;
+  font-size: 28px; }
+
+.anz-menu-krest {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  right: 5px;
+  top: 5px; }
+
+.anz-menu-ch {
+  color: #0c3d82;
+  cursor: pointer; }
+
+/* FOOTER*/
+.footer {
+  width: 100%;
+  background: #252f3e;
+  padding: 27px 0px; }
+  .footer .row {
+    padding: 0px;
+    margin: 0pc; }
+  .footer div[class^="col"] {
+    padding: 0px;
+    margin: 0pc; }
+
+.footer-top {
+  min-width: 50px;
+  border-bottom: 1px solid #1a212d;
+  padding-bottom: 13px; }
+
+.footer-middle {
+  min-width: 50px;
+  border-bottom: 1px solid #1a212d;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  color: #fff;
+  font-family: "RobotoLight";
+  font-size: 13px; }
+  .footer-middle .f-address span {
+    display: block;
+    position: relative;
+    padding-left: 30px; }
+  .footer-middle .f-address span:before {
+    position: absolute;
+    content: "";
+    background: url(./img/addr_ico.png) no-repeat left center;
+    width: 17px;
+    height: 17px;
+    margin-left: -25px;
+    margin-top: 5px; }
+  .footer-middle .f-address a {
+    display: inline-block;
+    color: #98bfe7;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-top: 13px; }
+  .footer-middle .f-contacts span {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    font-family: "RobotoRegular";
+    font-size: 20px; }
+  .footer-middle .f-contacts span:before {
+    position: absolute;
+    content: "";
+    background: url(./img/phone_ico3.png) no-repeat left top;
+    width: 17px;
+    height: 17px;
+    margin-left: -25px;
+    margin-top: 5px; }
+  .footer-middle .f-contacts a {
+    display: inline-block;
+    color: #98bfe7;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-top: 8px; }
+  .footer-middle .f-email {
+    text-align: right; }
+    .footer-middle .f-email span {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      font-family: "RobotoRegular";
+      font-size: 20px; }
+    .footer-middle .f-email span:before {
+      position: absolute;
+      content: "";
+      background: url(./img/email_ico.png) no-repeat left top;
+      width: 24px;
+      height: 18px;
+      margin-left: -25px;
+      margin-top: 5px; }
+  .footer-middle .f-copyright {
+    color: #6f7b8d;
+    font-size: 12px;
+    text-align: right; }
+
+.footer-bottom {
+  padding-top: 20px; }
+  .footer-bottom .f-some {
+    color: #7a8595;
+    font-size: 12px;
+    font-family: "RobotoLight";
+    line-height: 19px; }
+
+.footer-menu {
+  text-align: center;
+  margin-top: 15px; }
+  .footer-menu li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .footer-menu li a {
+      display: inline-block;
+      font-family: "RobotoLight";
+      font-size: 17px;
+      color: #fff; }
+
+.error-input {
+  border: 2px solid #ee8879 !important; }
+
+input {
+  outline: none !important; }
+
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none; }
+
+.window {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 9998;
+  background: #fff; }
+  .window .close {
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    top: -18px;
+    right: -27px;
+    background: url("../img/close.png") no-repeat top center; }
+  .window .thanks {
+    position: relative;
+    background-color: #fff;
+    padding: 100px 34px;
+    text-align: center;
+    border-radius: 3px; }
+    .window .thanks .title {
+      display: block;
+      font-size: 30px;
+      font-family: "RobotoBold"; }
+    .window .thanks p {
+      font-size: 18px;
+      margin-top: 20px; }
+
+.common-form {
+  display: block;
+  width: 380px;
+  padding: 38px;
+  background: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: "RobotoRegular"; }
+  .common-form .form-title {
+    display: block;
+    color: #303030;
+    font-size: 20px;
     font-family: "RobotoBold";
-    color: #fff;
+    line-height: 22px; }
+  .common-form .form-subtitle {
+    display: block;
+    color: #929292;
+    font-size: 14px;
+    margin-top: 18px;
+    margin-bottom: 15px; }
+  .common-form label {
+    display: block;
+    font-size: 12px;
+    color: #929292;
+    font-family: "RobotoRegular";
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .common-form input[type="text"] {
+    display: block;
+    width: 100%;
+    height: 57px;
+    box-sizing: border-box;
+    border: 2px solid #eaeaea;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    font-family: "RobotoRegular";
+    line-height: 40px;
+    padding: 0px 30px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .common-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    height: 57px;
+    box-sizing: border-box;
+    border: 2px solid #b72b17;
+    background: #fff;
+    color: #000;
+    font-family: "RobotoRegular";
+    padding: 0px 60px;
+    font-size: 15px;
     text-transform: uppercase;
-    text-decoration: none; }
-  .main-menu li a:hover {
-    background: url(./img/nav_hover.png) repeat-x top center; }
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 41px; }
+
+.an-exit__krest {
+  background: url(./img/krest.png);
+  width: 24px;
+  height: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  cursor: pointer; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .main-menu li a {
+    padding-left: 30px !important;
+    padding-right: 30px !important; } }
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .main-menu li a {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-size: 13px; }
+
+  .top-header {
+    display: table;
+    width: 100%; }
+
+  .ho-logo-box, .anz-menu {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%; }
+
+  .anz-menu {
+    text-align: right; }
+
+  .footer-top img {
+    display: block;
+    margin: 0 auto; }
+  .footer-top .footer-menu li {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px; }
+
+  .footer-middle {
+    text-align: center; }
+    .footer-middle .f-address {
+      margin-bottom: 25px; }
+
+  .footer-bottom {
+    text-align: center; }
+
+  .f-email {
+    text-align: center !important;
+    margin-top: 25px; }
+
+  .f-copyright {
+    text-align: center !important;
+    margin-top: 25px; }
+
+  .ho-lang-box-footer {
+    text-align: center !important;
+    margin-top: 25px; }
+    .ho-lang-box-footer span {
+      margin-left: 0px; } }
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */

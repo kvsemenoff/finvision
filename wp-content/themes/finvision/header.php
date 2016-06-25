@@ -38,18 +38,43 @@
     <section class="header">
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-6">
+    			<div class="col-md-5 col-sm-12 col-xs-12 top-header">
 
     				<div class="ho-logo-box">
     					<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
     				</div>
-    				<div class="ho-slogan">
+    				<div class="ho-slogan hidden-sm hidden-xs ">
     					Финский производитель<br>
 						видеорегистраторов
     				</div>
+    				<div class="anz-menu hidden-md hidden-lg">
+						<input type="checkbox" id="check_1"/>
+						<label class="anz-menu-ch" for="check_1"><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></label>
+
+						<div class="menu-list-pressed">
+							<div class="ho-contact-box-pop">
+		    					<span class="tel">+7 (499) 324 - 54 -54</span> <br>
+		    					<a href="#zvonok" name="modal">Заказать консультацию</a>
+		    				</div>
+		    				<ul class="main-menu-pop">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Интернет-магазин</a></li>
+								<li><a href="#">Оптовикам</a></li>
+								<li><a href="#">Контакты</a></li>
+		    				</ul>
+							<div class="ho-lang-box-pop">
+		    					<span>Выберите язык:</span>
+		    					<a href="#" class="fin">FIN</a>
+		    					<a href="#" class="eng">ENG</a>
+		    					<a href="#" class="rus">Рус</a>
+		    				</div>
+
+						</div>
+					</div>
 
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-md-4 hidden-sm hidden-xs">
     				<div class="ho-lang-box">
     					<span>Выберите язык:</span>
     					<a href="#" class="fin">FIN</a>
@@ -58,9 +83,9 @@
     				</div>
     				
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-md-3 hidden-sm hidden-xs">
     				<div class="ho-contact-box">
-    					<span class="tel">+7 (499) 324 - 54 -54</span>
+    					<span class="tel">+7 (499) 324 - 54 -54</span> <br>
     					<a href="#zvonok" name="modal">Заказать консультацию</a>
     				</div>
     			</div>
@@ -68,7 +93,7 @@
     	</div>
     </section>
    
-   	<div class="header-nav">
+   	<div class="header-nav hidden-sm hidden-xs">
    		<div class="container">
    			<div class="row">
    				<div class="col-md-12">
@@ -77,6 +102,7 @@
 						<li><a href="#">Каталог</a></li>
 						<li><a href="#">Интернет-магазин</a></li>
 						<li><a href="#">Оптовикам</a></li>
+						<li><a href="#">Контакты</a></li>
     				</ul>
    				</div>
    			</div>
