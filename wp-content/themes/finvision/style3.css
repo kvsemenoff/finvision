@@ -1,3 +1,56 @@
+.anz-background {
+  background: url(./img/backgroung.jpg) no-repeat center top;
+  padding: 45px 0px; }
+
+/*road*/
+.container_style {
+  background: url(./img/backgroung-road.jpg) no-repeat center top;
+  height: 500px; }
+
+.anz-fin {
+  font-family: "RobotoBold";
+  font-size: 47px;
+  letter-spacing: .065em;
+  color: #fff;
+  margin-top: 115px;
+  display: block;
+  margin-left: 56px; }
+
+.anz-solve {
+  font-family: "RobotoRegular";
+  font-size: 25.5px;
+  letter-spacing: .05em;
+  color: #fff;
+  margin-top: 10px;
+  display: block;
+  margin-left: 55px; }
+
+.anz-button {
+  display: block;
+  width: 338px;
+  height: 63px;
+  background: #0f4085 url(./img/button-arrow.png) no-repeat 94.5% 28px;
+  line-height: 63px;
+  border-radius: 3px;
+  color: #fff;
+  margin-left: 50px;
+  margin-top: 38px;
+  font-family: "RobotoMedium";
+  font-size: 15px;
+  padding-left: 26px;
+  letter-spacing: -.02em;
+  border-bottom: 2px solid #0c3268;
+  text-transform: uppercase; }
+
+.no-one {
+  font-family: "RobotoLight";
+  font-size: 18px;
+  color: #fff;
+  margin-left: 55px;
+  margin-top: 20px;
+  display: block; }
+
+/*road*/
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
