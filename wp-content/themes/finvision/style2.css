@@ -1,3 +1,16 @@
+.ah-cart-list1_item1 {
+  display: inline-block;
+  font-family: "RobotoLight";
+  font-size: 13px;
+  text-decoration: underline;
+  color: #0f4085; }
+
+.ah-cart-list1_item2 {
+  display: inline-block;
+  font-family: "RobotoLight";
+  font-size: 13px;
+  color: #888888; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */

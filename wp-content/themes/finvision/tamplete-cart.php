@@ -11,29 +11,33 @@ Template name: Карточка товара
 		<div class="row no-gutter">   <!-- ********************  no-gutter -->
 			<div class="col-md-3 col-sm-12 col-xs-12">
 				<ul class="ah-cart-list1">
-					<li class="ah-cart-list1_item1">Главная - </li>
+					<li class="ah-cart-list1_item1"><a href="#">Главная - </a></li>
 					<li class="ah-cart-list1_item2">Контактная информация</li>
 				</ul>
 				<h1>FinnVision — B7</h1>
 			</div>
+
+			<div class="clearfix"></div>
+
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="ah-left-block">
-					<img src="img/ah-cart1.jpg" alt="ah-cart1"  class="img-responsive ah-img-block">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ah-cart1.jpg" alt="ah-cart1"  class="img-responsive ah-img-block">
 					<ul class="ah-cart-list2">
 						<li>
-							<img src="img/ah-cart2.jpg" alt="ah-cart1"  class="img-responsive ah-img-block1">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ah-cart2.jpg" alt="ah-cart2"  class="img-responsive ah-img-block1">
 						</li>
 						<li>
-							<img src="img/ah-cart1.jpg" alt="ah-cart1"  class="img-responsive ah-img-block2">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ah-cart3.jpg" alt="ah-cart3"  class="img-responsive ah-img-block2">
 						</li>
 						<li>
-							<img src="img/ah-cart1.jpg" alt="ah-cart1"  class="img-responsive ah-img-block3">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ah-cart4.jpg" alt="ah-cart4"  class="img-responsive ah-img-block3">
 						</li>
 					</ul>
 					<span class="ah-cart-span">Описание</span>
 					<p class="ah-cart-text">Компания DVR-group – оптово-розничная компания по продаже автомобильной электроники и аксессуаров. Под брендом «DVR-GROUP» объединилась группа экспертов, которые имея многолетний опыт продаж потребительской электроники на российском рынке, задались целью предложить покупателям недорогие, надежные и эффективные продукты для российских водителей.  С 2011 года мы успешно развиваем данное направления, бесконечно анализируя рынок и предлагая лучшие модели из всего раздела авто электроники. Мы постоянно пополняем ассортимент нашего магазинна и приняли решение сделать доступными для массового потребителя системы видеонаблюдения, эхолоты.</p>
 				</div>
 			</div>
+
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="ah-right-block">
 					<ul class="ah-cart-list3">
@@ -60,16 +64,6 @@ Template name: Карточка товара
 				</div>
 			</div>	
 		</div>
-
-				<!-- <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(''); ?>
-				
-				<h2><?php the_title(); ?></h2>
-				<?php while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
-				<?php endwhile; // end of the loop. ?>
-				
-				<?php require_once('advice.php'); ?> -->
-		<!-- <div class="clear"></div> -->
 	</div>
 </section>
 
