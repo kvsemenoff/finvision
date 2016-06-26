@@ -50,9 +50,15 @@ q:before, q:after {
   content: none; 
 }
 
-
+body{
+    
+}
 strong{
-	
+    font-family: "RobotoBold";
+}
+h1{
+    font-family: "RobotoRegular";
+    font-size: 34px;
 }
 .center{
 	text-align: center;
