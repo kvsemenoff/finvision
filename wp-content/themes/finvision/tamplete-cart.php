@@ -8,7 +8,7 @@ Template name: Карточка товара
 
 <section class="content-inner">
 	<div class="container">
-		<div class="row no-gutter">   <!-- ********************  no-gutter -->
+		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12 ah-wrapper">
 				<div class="col-md-4 col-sm-12 col-xs-12">
 					<ul class="ah-cart-list1">

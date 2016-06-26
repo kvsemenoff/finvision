@@ -128,7 +128,86 @@
 
 // ******************************* Карточка товара *******************************
 
+// ******************************* Контактная информация *******************************
+.no-gutter > [class*='col-']{
+    padding-right:0;
+    padding-left:0;
+}
+.ah-line2{
+    width: 472px;
+    height: 3px;
+    background-color: #0f4085;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.ah-contactwrapper{
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 8.7px 49px rgba(12, 61, 130, 0.22);
+    margin-top: 37px;
+    span{
+        display: block;
+        font-family: "RobotoRegular";
+        color: #585858;
+    }
+    p{
+        font-family: "RobotoRegular";
+        font-size: 16px;
+        line-height: 26px;
+        color: #585858;
+        margin-bottom: 57px;
+    }
+}
+.ah-contact-margin{
+    margin-top: 41px;
+}
+.ah-contacts-span{
+    font-size: 20px;
+    line-height: 26px;
+}
+.ah-contacts-span1{
+    font-family: "RobotoLight" !important;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 31px;
+    margin-top: 3px;
+}
+.ah-contacts-span2{
+    font-size: 20px;
+    line-height: 26px;
+}
+.ah-contacts-span3{
+    font-family: "RobotoLight" !important;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 26px;
+}
+.ah-contacts-span4{
+    font-size: 20px;
+    line-height: 41px;
+}
+.ah-contacts-span5{
+    font-size: 27px;
+    line-height: 33px;
+    margin-bottom: 3px;
+}
+.ah-contacts-span6{
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 40px;
+    // background: url(../img/ah-contacts3.png) no-repeat;
+}
+.ah-contacts-span7{
+    font-size: 20px;
+    line-height: 41px;
+    margin-bottom: 16px;
+}
 
+
+
+
+
+// ******************************* Контактная информация *******************************
 
 
 
