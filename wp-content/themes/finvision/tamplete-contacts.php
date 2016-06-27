@@ -8,7 +8,7 @@ Template name: Контактная информация
 
 <section class="content-inner">
 	<div class="container">
-		<div class="row no-gutter">   <!-- ********************  no-gutter -->
+		<div class="row no-gutter">
 			<div class="col-md-12 col-sm-12 col-xs-12 ah-contactwrapper">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ah-contacts1.jpg" alt="ah-contacts1" class="img-responsive ah-img-contactblock">
 				<ul class="ah-cart-list1 ah-contact-margin">
