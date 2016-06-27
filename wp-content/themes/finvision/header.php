@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/owl.carousel/assets/owl.carousel.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/wow/animate.css">
-
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/wow/animate.css">
 
 	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
@@ -25,12 +25,14 @@
 </head>
 <body>
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/jquery/jquery-1.11.1.min.js"></script>
+	<!-- <script src="<?php echo get_template_directory_uri(); ?>/libs/owl.carousel/owl.carousel.js"></script> -->
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/owl.carousel/owl.carousel.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/wow/wow.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/responsiveTabs.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
+
 	<script>
     	new WOW().init();
     </script>
