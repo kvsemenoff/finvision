@@ -8,7 +8,7 @@
 .ah-wrapper{
     background-color: white;
     box-shadow: 5px 8.7px 49px rgba(12, 61, 130, 0.22);
-    margin-top: 45px;
+    margin: 45px 0;
     padding-left: 49px;
     padding-top: 16px;
     padding-bottom: 46px;
@@ -24,11 +24,11 @@
 .kama_breadcrumbs{
     margin-bottom: 7px;
     span{
-        display: inline-block;
+        display: inline-block !important;
         font-family: "RobotoLight";
         font-size: 13px;
         text-decoration: underline;
-        color: #0f4085;
+        color: #0f4085 !important;
     }
 }
 .ah-img-block{
@@ -202,7 +202,9 @@
     line-height: 41px;
     margin-bottom: 16px;
 }
-
+#map{
+    height: 469px;
+}
 
 
 
@@ -304,7 +306,6 @@
         margin-left: 0;
         margin-top: 20px;
     }
-
 // ********** Карточка товара **********
 
 
