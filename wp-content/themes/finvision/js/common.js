@@ -5,6 +5,23 @@ $(document).ready(function(){
     funcun = function(){$('.menu-list-pressed').css({'animation-duration': '1s'});}
     setTimeout(funcun,1000);
 
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
     $(".phone").mask("+ 7 (999) 999 - 99 - 99?"); 
 
     $(".single_image").fancybox();
