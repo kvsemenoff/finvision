@@ -1,23 +1,4 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 <section class="footer">
 	<div class="container">
@@ -96,6 +77,34 @@
         <input type="submit" id="form1_submit" value="Заказать консультацию">
     </form>
 </div>
+
+<!-- ******************************** ah-item ******************************** -->
+
+<div id="kupit" class="window"> 
+    <form action="" class="common-form form2">
+        <div class="an-exit">
+            <span class="an-exit__krest"></span>
+        </div>
+        <span class="form-title">Купите в интернет-магазине</span>
+        <span class="form-subtitle">Оставьте заявку и наш специалист перезвонит вам в течении 3 минут</span>
+        <input type="text" name="tel" placeholder="+7 900 000 00 00" class="phone">
+        <input type="submit" id="form2_submit" value="Купить в интернет-магазине">
+    </form>
+</div>
+
+<div id="kupit1" class="window"> 
+    <form action="" class="common-form form3">
+        <div class="an-exit">
+            <span class="an-exit__krest"></span>
+        </div>
+        <span class="form-title">Купить в 1 клик</span>
+        <span class="form-subtitle">Оставьте заявку и наш специалист перезвонит вам в течении 3 минут</span>
+        <input type="text" name="tel" placeholder="+7 900 000 00 00" class="phone">
+        <input type="submit" id="form3_submit" value="Купить в 1 клик">
+    </form>
+</div>
+
+<!-- ******************************** ah-item ******************************** -->
 
 <div id="thanks" class="window"> 
     <form action="" class="common-form">
