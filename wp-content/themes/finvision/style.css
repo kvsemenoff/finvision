@@ -46,6 +46,13 @@ q:before, q:after {
   content: '';
   content: none; }
 
+strong {
+  font-family: "RobotoBold"; }
+
+h1 {
+  font-family: "RobotoRegular";
+  font-size: 34px; }
+
 .center {
   text-align: center;
   margin: 0 auto; }
