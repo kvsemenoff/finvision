@@ -107,71 +107,54 @@ $('.owl-carousel').owlCarousel({
         return false;
     });
 
-    $(".form2").submit(function() { 
-        var tel = $(this).find('input[name="tel"]');
-        var empty = false;
-        if (tel.val() == ""){
-            empty = true;
-        }
-        if (empty == true){
-            tel.addClass("error-input");
-            tel.focus();
+
+// ******************************** ah-item ********************************
+
+    $("#form2_submit").click(function () {
+       
+        var empty = true;
+        $('.form2  input[name="tel"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш телефон");
         }else{
-            var form_data = $(this).serialize(); 
-            $.ajax({
-                type: "POST", 
-                url: "/sendmessage.php", 
-                data: form_data,
-                success: function() {
-                    cleanTnakns(this);
-                }
-            });
+          $.ajax({
+            type: 'POST',
+            url: '/sendmessage.php',
+            data: $('.form2').serialize(),
+            success: function(data) {
+            }
+          });
+          $('.window').hide();
+          $('a[href=#thanks]').trigger('click');
         }
+        var empty = true;
         return false;
-    });
-    $(".form3").submit(function() { 
-        var tel = $(this).find('input[name="tel"]');
-        var empty = false;
-        if (tel.val() == ""){
-            empty = true;
-        }
-        if (empty == true){
-            tel.addClass("error-input");
-            tel.focus();
+    }); 
+
+    $("#form3_submit").click(function () {
+       
+        var empty = true;
+        $('.form3  input[name="tel"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш телефон");
         }else{
-            var form_data = $(this).serialize(); 
-            $.ajax({
-                type: "POST", 
-                url: "/sendmessage.php", 
-                data: form_data,
-                success: function() {
-                    cleanTnakns(this);
-                }
-            });
+          $.ajax({
+            type: 'POST',
+            url: '/sendmessage.php',
+            data: $('.form3').serialize(),
+            success: function(data) {
+            }
+          });
+          $('.window').hide();
+          $('a[href=#thanks]').trigger('click');
         }
+        var empty = true;
         return false;
-    });
-    $(".form4").submit(function() { 
-        var tel = $(this).find('input[name="email"]');
-        var empty = false;
-        if (tel.val() == ""){
-            empty = true;
-        }
-        if (empty == true){
-            tel.addClass("error-input");
-            tel.focus();
-        }else{
-            var form_data = $(this).serialize(); 
-            $.ajax({
-                type: "POST", 
-                url: "/sendmessage.php", 
-                data: form_data,
-                success: function() {
-                    cleanTnakns(this);
-                }
-            });
-        }
-        return false;
-    });
+    }); 
+// ******************************** ah-item ********************************
 
 });
