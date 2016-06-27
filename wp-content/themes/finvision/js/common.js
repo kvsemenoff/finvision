@@ -21,7 +21,7 @@ var $i = 1;
         func2 = function(){
             if(($i+1)==$items.length){$i-=$items.length;}
             else if(($i-1)==-$items.length){$i+=$items.length;}
-            
+            //alert($i);
             $items.addClass('anz-item-hidden');
             
             if ($items.eq($i).hasClass('anz-item-after')){
@@ -59,7 +59,7 @@ var $i = 1;
         });
             
             $items.addClass('anz-item-hidden');
-            $items.eq($i).removeClass('anz-item-hidden');
+            $items.eq(($i)%$items.length).removeClass('anz-item-hidden');
             $items.eq($i-1).removeClass('anz-item-hidden').addClass('anz-item-before');
             $items.eq($i-2).removeClass('anz-item-hidden').addClass('anz-item-before2');
             $items.eq(($i+1)%$items.length).removeClass('anz-item-hidden').addClass('anz-item-after');
