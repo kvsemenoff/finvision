@@ -4,15 +4,14 @@
 
 /*road*/
 .container_style {
-  background: url(./img/backgroung-road.jpg) no-repeat center top;
-  height: 500px; }
+  background: url(./img/backgroung-road.jpg) no-repeat center top; }
 
 .anz-fin {
   font-family: "RobotoBold";
   font-size: 47px;
   letter-spacing: .065em;
   color: #fff;
-  margin-top: 115px;
+  padding-top: 115px;
   display: block;
   margin-left: 56px; }
 
@@ -65,7 +64,7 @@
 .anz-item {
   position: absolute;
   top: 0%;
-  left: 33.3%;
+  left: calc(33.3% + ((33.3% - 333px)/2));
   width: 33.3%;
   height: 500px;
   z-index: 100;
@@ -73,22 +72,22 @@
   opacity: 1; }
 
 .anz-item-before {
-  left: 0%;
+  left: calc(0% + ((33.3% - 333px)/2));
   z-index: 100;
   opacity: 1; }
 
 .anz-item-before2 {
-  left: -33.3%;
+  left: calc(-33.3% + ((33.3% - 333px)/2));
   z-index: 50 !important;
   opacity: 1; }
 
 .anz-item-after {
-  left: 66.6%;
+  left: calc(66.6% + ((33.3% - 333px)/2));
   z-index: 100;
   opacity: 1; }
 
 .anz-item-after2 {
-  left: 100%;
+  left: calc(100% + ((33.3% - 333px)/2));
   z-index: 50 !important;
   opacity: 1; }
 
@@ -123,13 +122,11 @@
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .anz-item {
     position: absolute;
     top: 0%;
-    left: 50%;
+    left: calc(50% + ((50% - 333px)/2));
     width: 50%;
     height: 500px;
     z-index: 100;
@@ -137,30 +134,30 @@
     opacity: 1; }
 
   .anz-item-before {
-    left: 0%;
+    left: calc(0% + ((50% - 333px)/2));
     z-index: 100;
     opacity: 1; }
 
   .anz-item-before2 {
-    left: -50%;
+    left: calc(-50% + ((50% - 333px)/2));
     z-index: 50 !important;
     opacity: 1; }
 
   .anz-item-after {
-    left: 100%;
+    left: calc(100% + ((50% - 333px)/2));
     z-index: 100;
     opacity: 1; }
 
   .anz-item-after2 {
-    left: 150%;
+    left: calc(150% + ((50% - 333px)/2));
     z-index: 50 !important;
     opacity: 1; } }
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
   .anz-item {
     position: absolute;
     top: 0%;
-    left: 100%;
+    left: calc(100% + ((100% - 333px)/2));
     width: 100%;
     height: 500px;
     z-index: 100;
@@ -168,24 +165,26 @@
     opacity: 1; }
 
   .anz-item-before {
-    left: 0%;
+    left: calc(0% + ((100% - 333px)/2));
     z-index: 100;
     opacity: 1; }
 
   .anz-item-before2 {
-    left: -100%;
+    left: calc(-100% + ((100% - 333px)/2));
     z-index: 50 !important;
     opacity: 1; }
 
   .anz-item-after {
-    left: 200%;
+    left: calc(200% + ((100% - 333px)/2));
     z-index: 100;
     opacity: 1; }
 
   .anz-item-after2 {
-    left: 300%;
+    left: calc(300% + ((100% - 333px)/2));
     z-index: 50 !important;
     opacity: 1; } }
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 /*slider*/
 /*slider*/
@@ -202,7 +201,7 @@
 .tab_3 ~ .anz-relative .tab_c3,
 .tab_4 ~ .anz-relative .tab_c4 {
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: -1000%;
   opacity: 0.6; }
 
@@ -211,7 +210,7 @@
 .tab_3:checked ~ .anz-relative .tab_c3,
 .tab_4:checked ~ .anz-relative .tab_c4 {
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 0%;
   opacity: 1;
   transition: opacity .5s ease-out; }
@@ -273,6 +272,50 @@
   display: none; }
 
 /*tabs*/
+/*products*/
+.anz-product {
+  background: #0f4085;
+  width: 100%;
+  height: 761px;
+  text-align: center;
+  padding: 30px; }
+  .anz-product h1 {
+    color: #fff;
+    font-family: "RobotoRegular";
+    font-size: 27px;
+    text-transform: uppercase;
+    margin-bottom: 8px; }
+  .anz-product .anz-white {
+    font-family: "RobotoRegular";
+    font-size: 16px;
+    letter-spacing: -.02em;
+    color: #fff;
+    display: block;
+    line-height: 28px; }
+  .anz-product .anz-items_margin {
+    margin-top: 23px; }
+  .anz-product .anz-item_style {
+    width: 333px;
+    height: 498px;
+    border-radius: 4px;
+    border: 1px solid #103467;
+    background: #fff;
+    overflow: hidden; }
+  .anz-product .tab_c1, .anz-product .tab_c2, .anz-product .tab_c3, .anz-product .tab_c4 {
+    width: 331px; }
+    .anz-product .tab_c1 img, .anz-product .tab_c2 img, .anz-product .tab_c3 img, .anz-product .tab_c4 img {
+      width: 331px; }
+  .anz-product .anz-title {
+    background: #dae4f2;
+    width: 100%;
+    height: 53px;
+    font-family: "RobotoBold";
+    font-size: 20px;
+    color: #0f4085;
+    display: block;
+    line-height: 53px; }
+
+/*products*/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
