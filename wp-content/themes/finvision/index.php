@@ -23,9 +23,9 @@
 					<?php wp_reset_query(); ?>
 					<?php $wp_query = new WP_Query(array('post_type' => 'tovar')); ?>
 					<?php $num = 0; ?>
-
+					
 					<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-						asdasdad
+					
 					<div class="anz-item anz-none anz-item_style">
 						<div class="anz-galary">
 						
@@ -36,7 +36,7 @@
 							<input type="radio" id="tab_<?php echo $num+2; ?>" name="tab<?php echo $num; ?>" class="tab_2"/>
 							<input type="radio" id="tab_<?php echo $num+3; ?>" name="tab<?php echo $num; ?>" class="tab_3"/>
 							<input type="radio" id="tab_<?php echo $num+4; ?>" name="tab<?php echo $num; ?>" class="tab_4"/>
-							<div class="anz-relative">
+							<div class="anz-relative anz-relative_margin">
 							<?php $image = get_field('картинка_1'); ?>
 							<div id="tab_c<?php echo $num+1; ?>" class="tab_c1"><img src="<?php echo $image['url']; ?>" alt=""></div>
 							<?php $image = get_field('картинка_2'); ?>
@@ -46,22 +46,41 @@
 							<?php $image = get_field('картинка_4'); ?>
 							<div id="tab_c<?php echo $num+4; ?>" class="tab_c4"><img src="<?php echo $image['url']; ?>" alt=""></div>
 							</div>
-
+							<div class="anz-relative anz-relative_style">
+							<div class="anz-absolute anz-relative_style">
 							<?php $image = get_field('картинка_1'); ?>
 							<label for="tab_<?php echo $num+1; ?>" id="tab_l<?php $num+1; ?>" class="anz-img tab_l1"><img src="<?php echo $image['url']; ?>" alt=""></label>
+							</div>
+							</div>
+							<div class="anz-relative anz-relative_style">
+							<div class="anz-absolute anz-absolute_style">
 							<?php $image = get_field('картинка_2'); ?>
 							<label for="tab_<?php echo $num+2; ?>" id="tab_l<?php $num+2; ?>" class="anz-img tab_l2"><img src="<?php echo $image['url']; ?>" alt=""></label>
+							</div>
+							</div>
+							<div class="anz-relative anz-relative_style">
+							<div class="anz-absolute anz-absolute_style">
 							<?php $image = get_field('картинка_3'); ?>
 							<label for="tab_<?php echo $num+3; ?>" id="tab_l<?php $num+3; ?>" class="anz-img tab_l3"><img src="<?php echo $image['url']; ?>" alt=""></label>
+							</div>
+							</div>
+							<div class="anz-relative anz-relative_style">
+							<div class="anz-absolute anz-absolute_style">
 							<?php $image = get_field('картинка_4'); ?>
 							<label for="tab_<?php echo $num+4; ?>" id="tab_l<?php $num+4; ?>" class="anz-img tab_l4"><img src="<?php echo $image['url']; ?>" alt=""></label>
+							</div>
+							</div>
+
+
 						</div>
-						<span class><?php the_field('характеристика_1'); ?></span>
-						<span><?php the_field('характеристика_2'); ?></span>
-						<span><?php the_field('характеристика_3'); ?></span>
-						<span><?php the_field('характеристика_4'); ?></span>
-						<a href="#">Купить</a>
-						<a href="#">подробнее</a>
+						<div class="anz-padding">
+							<span class="anz-char"><?php the_field('характеристика_1'); ?></span>
+							<span class="anz-char"><?php the_field('характеристика_2'); ?></span>
+							<span class="anz-char"><?php the_field('характеристика_3'); ?></span>
+							<span class="anz-char"><?php the_field('характеристика_4'); ?></span>
+							<a href="#">Купить</a>
+							<a href="#">подробнее</a>
+						</div>
 						</div>
 
 					</div>
