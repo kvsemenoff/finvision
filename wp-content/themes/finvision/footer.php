@@ -121,6 +121,22 @@
 
 <!-- ******************************** ah-item ******************************** -->
 
+<!-- ******************************** ah-optovikam ******************************** -->
+
+<div id="optovik" class="window"> 
+    <form action="" class="common-form form4">
+        <div class="an-exit">
+            <span class="an-exit__krest"></span>
+        </div>
+        <span class="form-title">Стать оптовиком</span>
+        <span class="form-subtitle">Оставьте заявку и наш специалист перезвонит вам в течении 3 минут</span>
+        <input type="text" name="tel" placeholder="+7 900 000 00 00" class="phone">
+        <input type="submit" id="form4_submit" value="Стать оптовиком">
+    </form>
+</div>
+
+<!-- ******************************** ah-optovikam ******************************** -->
+
 <div id="thanks" class="window"> 
     <form action="" class="common-form">
         <div class="an-exit">

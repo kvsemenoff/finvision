@@ -221,4 +221,30 @@ $('.owl-carousel').owlCarousel({
     }); 
 // ******************************** ah-item ********************************
 
+// ******************************** ah-optovik ********************************
+
+$("#form4_submit").click(function () {
+       
+        var empty = true;
+        $('.form4 input[name="tel"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш телефон");
+        }else{
+          $.ajax({
+            type: 'POST',
+            url: '/sendmessage.php',
+            data: $('.form4').serialize(),
+            success: function(data) {
+            }
+          });
+          $('.window').hide();
+          $('a[href=#thanks]').trigger('click');
+        }
+        var empty = true;
+        return false;
+    }); 
+// ******************************** ah-optovik ********************************
+
 });
