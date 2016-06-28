@@ -317,7 +317,8 @@ width: 73px;
 .tab_4:checked ~ .anz-relative .tab_c4{
 	position: absolute;
 	top: 0px;
-	left: 0%;
+	left: 50%;
+	transform: translateX(-50%);
 	opacity: 1;
 	transition: opacity .5s ease-out;
 }
@@ -366,10 +367,10 @@ width: 73px;
 }
 
 
-.tab_1 ~ .tab_l1:before,
-.tab_2 ~ .tab_l2:before,
-.tab_3 ~ .tab_l3::before,
-.tab_4 ~ .tab_l4::before{
+.tab_1 ~ .anz-relative .tab_l1:before,
+.tab_2 ~ .anz-relative .tab_l2:before,
+.tab_3 ~ .anz-relative .tab_l3::before,
+.tab_4 ~ .anz-relative .tab_l4::before{
 position:absolute;
 left:0;
 content: '';
@@ -378,15 +379,15 @@ z-index:9000;
 background-color:#fff;
 display:block;
 width: 71px;
-height: 47px;
+height: 71px;
 opacity: 0.5;
 
 }
 
-.tab_1:checked ~ .tab_l1:before,
-.tab_2:checked ~ .tab_l2:before,
-.tab_3:checked ~ .tab_l3:before,
-.tab_4:checked ~ .tab_l4:before{
+.tab_1:checked ~ .anz-relative .tab_l1:before,
+.tab_2:checked ~ .anz-relative .tab_l2:before,
+.tab_3:checked ~ .anz-relative .tab_l3:before,
+.tab_4:checked ~ .anz-relative .tab_l4:before{
 display:none;
 }
 
@@ -474,6 +475,74 @@ display:none;
 }
 
 /*products*/
+
+
+
+/*about company*/
+.anz-padding2{
+	padding-top: 80px;
+	padding-bottom: 100px;
+	.anz-title{
+		display: block;
+		font-family: "RobotoRegular";
+		font-size: 27px;
+		color: #3078c2;
+		text-transform: uppercase;
+		margin-bottom: 11px;
+	}
+	.anz-line{
+		width: 100%;
+		height: 3px;
+		background: #0f4085;
+		display: block;
+	}
+	.anz-subtitle{
+		font-family: "RobotoMedium";
+		font-size: 21px;
+		letter-spacing: .02em;
+		display: block;
+		white-space: nowrap;
+		margin-top: 8px;
+
+	}
+	p{
+		font-family: "RobotoLight";
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 20px;
+	}
+
+	a{
+	display: block;
+	width: 152px;
+	height: 37px;
+	background: #3078c2 url(./img/button-arrow.png) no-repeat 94.5% 14px;
+	line-height: 37px;
+	border-radius: 3px;
+	color: #fff;
+	margin-left: -4px;
+	margin-top: 16px;
+	font-family: "RobotoMedium";
+	font-size: 14px;
+	padding-left: 13px;
+	letter-spacing: .02em;
+	//border-bottom: 2px solid #0c3268;	
+	text-transform: uppercase;
+	}
+}
+.anz-float{
+	img{
+		float: left;
+		margin: 5px;
+	}
+	img:first-child{
+		margin-left: 0px;
+	}
+}
+.clear{
+	clear: both;
+}
+/*about company*/
 
 
 

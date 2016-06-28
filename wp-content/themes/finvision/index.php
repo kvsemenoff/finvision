@@ -95,6 +95,36 @@
 			</div>
 			</div>
 		</div>
+		<div class="row">
+			
+				<div class="col-md-7 col-sm-12 col-xs-12 anz-padding2">
+
+					<div class="anz-float">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/zavod.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/polki.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/registrator.jpg" alt="">
+						<div class="clear"></div>
+					</div>
+				
+				</div>
+				<div class="col-md-5 col-sm-12 col-xs-12 anz-padding2">
+					<span class="anz-title">о компании</span>
+					<div class="anz-line"></div>
+					<span class="anz-subtitle">Финский производитель видеорегистраторов</span>
+					<p>Брать или не брать видеорегистратор для машины? Этот вопрос 
+давно перестал быть риторическим, и перешел в категорию 
+повседневных. Сейчас он звучит так: «Какой видеорегистратор 
+купить?». И  ответ на него очевиден,Брать или не брать 
+видеорегистратор для машины? Этот вопрос давно перестал быть 
+риторическим, и перешел в категорию повседневных. 
+Сейчас он звучит так: «Какой видеорегистратор купить?». 
+И  ответ на него очевиден:Брать или не брать видеорегистратор 
+для машины? Этот вопрос давно перестал быть риторическим,
+и перешел в категорию повседневных. Сейчас он звучит так: </p>
+					<a href="#">подробнее</a>
+				</div>
+			</div>
+		
 	</div>
 </section>
 
