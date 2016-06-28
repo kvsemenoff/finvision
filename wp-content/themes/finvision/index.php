@@ -19,10 +19,13 @@
 			<span class="anz-white">Мы показываем только лучшие модели и только для Вас</span>
 				<div class="anz-items anz-items_margin">
 					<span class="anz-left-arrow"></span>
+
 					<?php wp_reset_query(); ?>
 					<?php $wp_query = new WP_Query(array('post_type' => 'tovar')); ?>
 					<?php $num = 0; ?>
+
 					<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+						asdasdad
 					<div class="anz-item anz-none anz-item_style">
 						<div class="anz-galary">
 						
@@ -43,6 +46,7 @@
 							<?php $image = get_field('картинка_4'); ?>
 							<div id="tab_c<?php echo $num+4; ?>" class="tab_c4"><img src="<?php echo $image['url']; ?>" alt=""></div>
 							</div>
+
 							<?php $image = get_field('картинка_1'); ?>
 							<label for="tab_<?php echo $num+1; ?>" id="tab_l<?php $num+1; ?>" class="anz-img tab_l1"><img src="<?php echo $image['url']; ?>" alt=""></label>
 							<?php $image = get_field('картинка_2'); ?>

@@ -26,7 +26,7 @@
 <body>
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/jquery/jquery-1.11.1.min.js"></script>
 	<!-- <script src="<?php echo get_template_directory_uri(); ?>/libs/owl.carousel/owl.carousel.js"></script> -->
-	<script src="<?php echo get_template_directory_uri(); ?>/libs/owl.carousel/owl.carousel.js"></script>
+	<!-- <script src="<?php echo get_template_directory_uri(); ?>/libs/owl.carousel/owl.carousel.js"></script> -->
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/wow/wow.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/responsiveTabs.js"></script>
