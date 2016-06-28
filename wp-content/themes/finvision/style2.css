@@ -170,6 +170,12 @@
   margin: 0 auto;
   margin-bottom: 24px; }
 
+.ah-line5 {
+  width: 153px;
+  height: 3px;
+  background-color: #0f4085;
+  margin: 0 auto; }
+
 .ah-contactwrapper {
   text-align: center;
   background-color: white;
@@ -275,6 +281,9 @@
 
 #map {
   height: 469px; }
+
+.ah-product1 {
+  background: #fff !important; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
