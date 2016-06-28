@@ -190,11 +190,31 @@
 /*slider*/
 /*tabs*/
 .anz-tab-galary {
-  font-size: 0px; }
+  font-size: 0px;
+  background: #fff;
+  margin-bottom: 40px; }
 
 .anz-relative {
-  position: relative;
-  height: 300px; }
+  position: relative; }
+
+.anz-relative_margin {
+  height: 112px;
+  margin-bottom: 30px; }
+
+.anz-relative_style {
+  display: inline-block;
+  width: 73px;
+  height: 58px;
+  margin: 0px 3px 0px 0px; }
+
+.anz-absolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2; }
+
+.anz-absolute_style {
+  width: 73px; }
 
 .tab_1 ~ .anz-relative .tab_c1,
 .tab_2 ~ .anz-relative .tab_c2,
@@ -218,37 +238,43 @@
 .anz-tab-galary input[type="radio"] {
   display: none; }
 
-.tab_1:checked ~ .tab_l1,
-.tab_2:checked ~ .tab_l2,
-.tab_3:checked ~ .tab_l3,
-.tab_4:checked ~ .tab_l4 {
+.tab_1:checked ~ .anz-relative .tab_l1,
+.tab_2:checked ~ .anz-relative .tab_l2,
+.tab_3:checked ~ .anz-relative .tab_l3,
+.tab_4:checked ~ .anz-relative .tab_l4 {
   display: inline-block;
   width: 73px;
   border: 1px solid #0f4085;
-  margin: 23px 3px 0px 0px;
-  cursor: pointer; }
-  .tab_1:checked ~ .tab_l1 img,
-  .tab_2:checked ~ .tab_l2 img,
-  .tab_3:checked ~ .tab_l3 img,
-  .tab_4:checked ~ .tab_l4 img {
-    width: 71px; }
+  position: relative;
+  height: 73px;
+  cursor: pointer;
+  background: #fff;
+  margin: 23px 3px 0px 0px; }
+  .tab_1:checked ~ .anz-relative .tab_l1 img,
+  .tab_2:checked ~ .anz-relative .tab_l2 img,
+  .tab_3:checked ~ .anz-relative .tab_l3 img,
+  .tab_4:checked ~ .anz-relative .tab_l4 img {
+    width: 71px;
+    padding: 10px 0px; }
 
-.tab_1 ~ .tab_l1,
-.tab_2 ~ .tab_l2,
-.tab_3 ~ .tab_l3,
-.tab_4 ~ .tab_l4 {
-  margin: 23px 3px 0px 0px;
+.tab_1 ~ .anz-relative .tab_l1,
+.tab_2 ~ .anz-relative .tab_l2,
+.tab_3 ~ .anz-relative .tab_l3,
+.tab_4 ~ .anz-relative .tab_l4 {
   display: inline-block;
   position: relative;
   cursor: pointer;
   width: 73px;
-  height: 49px;
+  height: 73px;
+  background: #fff;
+  margin: 23px 3px 0px 0px;
   border: 1px solid #c3d1e4; }
-  .tab_1 ~ .tab_l1 img,
-  .tab_2 ~ .tab_l2 img,
-  .tab_3 ~ .tab_l3 img,
-  .tab_4 ~ .tab_l4 img {
-    width: 71px; }
+  .tab_1 ~ .anz-relative .tab_l1 img,
+  .tab_2 ~ .anz-relative .tab_l2 img,
+  .tab_3 ~ .anz-relative .tab_l3 img,
+  .tab_4 ~ .anz-relative .tab_l4 img {
+    width: 71px;
+    padding: 10px 0px; }
 
 .tab_1 ~ .tab_l1:before,
 .tab_2 ~ .tab_l2:before,
@@ -299,12 +325,12 @@
     height: 498px;
     border-radius: 4px;
     border: 1px solid #103467;
-    background: #fff;
+    background: #dae4f2;
     overflow: hidden; }
   .anz-product .tab_c1, .anz-product .tab_c2, .anz-product .tab_c3, .anz-product .tab_c4 {
     width: 331px; }
     .anz-product .tab_c1 img, .anz-product .tab_c2 img, .anz-product .tab_c3 img, .anz-product .tab_c4 img {
-      width: 331px; }
+      width: 278px; }
   .anz-product .anz-title {
     background: #dae4f2;
     width: 100%;
@@ -313,7 +339,33 @@
     font-size: 20px;
     color: #0f4085;
     display: block;
-    line-height: 53px; }
+    line-height: 53px;
+    text-transform: uppercase; }
+  .anz-product .anz-char {
+    display: block;
+    font-family: "RobotoRegular";
+    letter-spacing: -.02em;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: left; }
+  .anz-product .anz-padding {
+    padding: 15px; }
+  .anz-product a {
+    width: 134px;
+    height: 46px;
+    border-radius: 2px;
+    background: #3078c2;
+    color: #fff;
+    font-family: "RobotoBold";
+    font-size: 13.8px;
+    line-height: 46px;
+    border: 1px solid #3078c2;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 30px 7px 0px 7px; }
+  .anz-product a:hover {
+    background: #dae4f2;
+    color: #3078c2; }
 
 /*products*/
 /*==========  Desktop First Method  ==========*/
