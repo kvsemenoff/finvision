@@ -5,7 +5,7 @@ $(document).ready(function(){
     funcun = function(){$('.menu-list-pressed').css({'animation-duration': '1s'});}
     setTimeout(funcun,1000);
 /*menu*/
-alert(1);
+
 /*slider*/
 var $i = 1;
         var $items = $('.anz-item');
