@@ -18,7 +18,7 @@
 			<span class="anz-white">Мы не собираемся тратить ваше время и нагружать бесполезной информацией.</span>
 			<span class="anz-white">Мы показываем только лучшие модели и только для Вас</span>
 				<div class="anz-items anz-items_margin">
-					<span class="anz-left-arrow"></span>
+					<span class="anz-left-arrow anz-left-arrow_margin"></span>
 
 					<?php wp_reset_query(); ?>
 					<?php $wp_query = new WP_Query(array('post_type' => 'tovar')); ?>
@@ -78,8 +78,8 @@
 							<span class="anz-char"><?php the_field('характеристика_2'); ?></span>
 							<span class="anz-char"><?php the_field('характеристика_3'); ?></span>
 							<span class="anz-char"><?php the_field('характеристика_4'); ?></span>
-							<a href="<?php the_permalink(); ?>" >Купить</a>
-							<a href="<?php the_permalink(); ?>" >подробнее</a>
+							<a href="<?php the_permalink(); ?>">Купить</a>
+							<a href="<?php the_permalink(); ?>">подробнее</a>
 						</div>
 						</div>
 
@@ -88,8 +88,10 @@
 						<?php endwhile;?>
 						<?php wp_reset_query(); ?>
 					
-					<span class="anz-right-arrow"></span>
+					<span class="anz-right-arrow anz-right-arrow_margin"></span>
 				</div>
+				<span class="anz-left-arrow anz-right-arrow_margin2"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+				<span class="anz-right-arrow anz-right-arrow_margin2"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
 			</div>
 			</div>
 		</div>

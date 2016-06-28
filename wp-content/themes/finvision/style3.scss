@@ -1,6 +1,7 @@
 
 .anz-background{
 	background: url(./img/backgroung.jpg) no-repeat center top;
+	background-size: cover;
 	padding: 45px 0px;
 }
 
@@ -116,29 +117,50 @@
     //transition: right 1s ease-out 1s !important;
 }
 .anz-left-arrow{
-cursor: pointer;
-background: url(./img/left-arrow.png) no-repeat;
-position: absolute;
-left: 0px;
-top: 50%;
-display:inline-block;
-width: 12px;
-height: 22px;
-z-index: 200;
-transform: translate(0, -50%);
+	cursor: pointer;
+}
+.anz-left-arrow_margin{
+	background: url(./img/left-arrow.png) no-repeat;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	display:inline-block;
+	width: 12px;
+	height: 22px;
+	z-index: 200;
+	transform: translate(0, -50%);
+}
+.anz-right-arrow_margin2{
+	display: inline-block;
+	height: 37px;
+	width: 39px;
+	border-radius: 2px;
+	border: 1px solid #acbdcf;
+	color: #acbdcf;
+	line-height: 34px;
+	font-size: 12px;
+	margin: 25px 5px;
+}
+.anz-right-arrow_margin2:hover{
+	border: 1px solid #0166d4;
+	color: #0166d4;
 }
 .anz-right-arrow{
-cursor: pointer;
-background: url(./img/right-arrow.png) no-repeat;
-position: absolute;
-right: 0px;
-top: 50%;
-display:inline-block;
-width: 12px;
-height: 22px;
-z-index: 200;
-transform: translate(0, -50%);
+	cursor: pointer;
+
 }
+.anz-right-arrow_margin{
+	background: url(./img/right-arrow.png) no-repeat;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	display:inline-block;
+	width: 12px;
+	height: 22px;
+	z-index: 200;
+	transform: translate(0, -50%);
+}
+
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
