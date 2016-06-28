@@ -9,11 +9,26 @@
 				</div>
 				<div class="col-md-10">
 					<ul class="footer-menu">
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Интернет-магазин</a></li>
-						<li><a href="#">Оптовикам</a></li>
-						<li><a href="#">Контакты</a></li>
+						<?php
+				            $args = array(
+				            'theme_location'  => '',
+				            'menu'            => 'bottom-menu', 
+				            'container'       => flase, 
+				            'container_class' => '', 
+				            'container_id'    => '',
+				            'menu_class'      => 'menu', 
+				            'menu_id'         => '',
+				            'echo'            => true,
+				            'fallback_cb'     => 'wp_page_menu',
+				            'before'          => '',
+				            'after'           => '',
+				            'link_before'     => '',
+				            'link_after'      => '',
+				            'items_wrap'      => '<ul class="footer-menu">%3$s</ul>',
+				            'depth'           => 0
+				        );
+				        wp_nav_menu($args ); 
+				        ?>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
@@ -54,9 +69,9 @@
 				<div class="col-md-3">
 					<div class="ho-lang-box-footer">
     					<span>Выберите язык:</span> <br>
-    					<a href="#" class="fin">FIN</a>
-    					<a href="#" class="eng">ENG</a>
-    					<a href="#" class="rus">Рус</a>
+    					<a href="/fi" class="fin">FIN</a>
+    					<a href="/en" class="eng">ENG</a>
+    					<a href="/ru" class="rus">Рус</a>
     				</div>
 				</div>
 				<div class="clearfox"></div>
