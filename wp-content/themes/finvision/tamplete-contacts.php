@@ -14,15 +14,17 @@ Template name: Контактная информация
 				<div class="ah-contact-margin"><?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' - '); ?></div>
 				<h1 class="ah-h1">Контактная информация</h1>
 				<div class="ah-line2"></div>
-				<p class="ah-contacts-text">Мы не собираемся тратить ваше время и нагружать бесполезной информацией.<br>Мы показываем только лучшие модели и только для Вас</p>
-				<span class="ah-contacts-span">Адрес основного офиса:</span>
-				<span class="ah-contacts-span1">620057, Екатеринбург, ул. Совхозная, 19, 4-й этаж</span>
-				<span class="ah-contacts-span2">Отдел продаж по регионам: </span>
-				<span class="ah-contacts-span3">Поволжье, Урал, Западная и Восточная Сибирь, Дальний Восток</span>
-				<span class="ah-contacts-span4">Телефон и E-mail:</span>
-				<span class="ah-contacts-span5">+7 (343) 288-28-25,  +7 (343) 290-45-46</span>
-				<span class="ah-contacts-span6">contactus@namesite.ru</span>
-				<span class="ah-contacts-span7">Схема проезда до офиса</span>
+				<div class="ah-contactwrapper1">
+					<p class="ah-contacts-text">Мы не собираемся тратить ваше время и нагружать бесполезной информацией.<br>Мы показываем только лучшие модели и только для Вас</p>
+					<span class="ah-contacts-span">Адрес основного офиса:</span>
+					<span class="ah-contacts-span1">620057, Екатеринбург, ул. Совхозная, 19, 4-й этаж</span>
+					<span class="ah-contacts-span2">Отдел продаж по регионам: </span>
+					<span class="ah-contacts-span3">Поволжье, Урал, Западная и Восточная Сибирь, Дальний Восток</span>
+					<span class="ah-contacts-span4">Телефон и E-mail:</span>
+					<span class="ah-contacts-span5">+7 (343) 288-28-25,  +7 (343) 290-45-46</span>
+					<span class="ah-contacts-span6">contactus@namesite.ru</span>
+					<span class="ah-contacts-span7">Схема проезда до офиса</span>
+				</div>
 				<!-- <div class="ah-img-contactblock1"> -->
 					<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 					<script type="text/javascript">

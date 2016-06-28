@@ -23,6 +23,8 @@
 }
 .kama_breadcrumbs{
     margin-bottom: 7px;
+    font-family: "RobotoLight";
+    font-size: 13px;
     span{
         display: inline-block !important;
         font-family: "RobotoLight";
@@ -30,6 +32,7 @@
         text-decoration: underline;
         color: #0f4085 !important;
     }
+
 }
 .ah-img-block{
     display: block;
@@ -104,11 +107,17 @@
     color: #fff;
     font-family: "RobotoRegular";
     font-size: 16px;
-    line-height: 43px;
+    line-height: 49px;
     text-align: center;
     margin-left: -28px;
     margin-top: 23px;
     border-radius: 4px;
+    border: 2px solid #1b4b90;
+}
+.ah-cart-link1:hover{
+    background-color: white;
+    color: #18498d;
+    border: 2px solid #1b4b90;
 }
 .ah-img-optoblock{
     width: 100%;
@@ -132,15 +141,20 @@
     display: inline-block;
     width: 258px;
     height: 51px;
-    background-color: white;
-    border: 2px solid #1b4b90;
+    background-color: #1e4e93;
     margin-left: 7px;
-    color: #18498d;
+    color: #fff;
     font-family: "RobotoRegular";
     font-size: 16px;
-    line-height: 39px;
+    line-height: 49px;
     text-align: center;
     border-radius: 4px;
+    border: 2px solid #1b4b90;
+}
+.ah-cart-link2:hover{
+    background-color: white;
+    color: #18498d;
+    border: 2px solid #1b4b90;
 }
 
 // ******************************* Карточка товара *******************************
@@ -188,6 +202,9 @@
         color: #585858;
         margin-bottom: 57px;
     }
+}
+.ah-contactwrapper1{
+    padding: 20px;
 }
 .ah-company{
     text-align: center;
@@ -313,7 +330,41 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+	.ah-line2{
+        width: 197px;
+    }
+    .ah-optowrapper1{
+        padding: 20px;
+    }
+    .ah-optowrapper {
+        box-shadow: none;
+        p{
+            text-align: center;
+        }
+    }
+    .ah-line4{
+        width: 165px;
+    }
+    .ah-optovikam-link{
+        margin-top: 164px;
+    }
+    .ah-img-optoblock{
+        background-size: cover;
+        height: 243px;
+    }
+    .ah-line3{
+        width: 180px;
+     }
+    .ah-company{
+        box-shadow: none;
+        margin: 20px 0;
+        p{
+            text-align: center;
+        }
+        ul{
+            text-align: left;
+        }
+    }
 // ********** Карточка товара **********
     .ah-h1{
         font-size: 27px;
