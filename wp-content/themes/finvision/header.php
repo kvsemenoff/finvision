@@ -59,17 +59,32 @@
 		    					<a href="#zvonok" name="modal">Заказать консультацию</a>
 		    				</div>
 		    				<ul class="main-menu-pop">
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Каталог</a></li>
-								<li><a href="#">Интернет-магазин</a></li>
-								<li><a href="#">Оптовикам</a></li>
-								<li><a href="#">Контакты</a></li>
+		    					<?php
+						            $args = array(
+						            'theme_location'  => '',
+						            'menu'            => 'top-menu', 
+						            'container'       => flase, 
+						            'container_class' => '', 
+						            'container_id'    => '',
+						            'menu_class'      => 'menu', 
+						            'menu_id'         => '',
+						            'echo'            => true,
+						            'fallback_cb'     => 'wp_page_menu',
+						            'before'          => '',
+						            'after'           => '',
+						            'link_before'     => '',
+						            'link_after'      => '',
+						            'items_wrap'      => '<ul class="main-menu-pop">%3$s</ul>',
+						            'depth'           => 0
+						        );
+						        wp_nav_menu($args ); 
+						        ?>
 		    				</ul>
 							<div class="ho-lang-box-pop">
 		    					<span>Выберите язык:</span>
-		    					<a href="#" class="fin">FIN</a>
-		    					<a href="#" class="eng">ENG</a>
-		    					<a href="#" class="rus">Рус</a>
+		    					<a href="/fi" class="fin">FIN</a>
+		    					<a href="/en" class="eng">ENG</a>
+		    					<a href="/ru" class="rus">Рус</a>
 		    				</div>
 
 						</div>
@@ -79,9 +94,9 @@
     			<div class="col-md-4 hidden-sm hidden-xs">
     				<div class="ho-lang-box">
     					<span>Выберите язык:</span>
-    					<a href="#" class="fin">FIN</a>
-    					<a href="#" class="eng">ENG</a>
-    					<a href="#" class="rus">Рус</a>
+    					<a href="/fi" class="fin">FIN</a>
+    					<a href="/en" class="eng">ENG</a>
+    					<a href="/ru" class="rus">Рус</a>
     				</div>
     				
     			</div>
@@ -100,11 +115,26 @@
    			<div class="row">
    				<div class="col-md-12">
    					<ul class="main-menu">
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Интернет-магазин</a></li>
-						<li><a href="#">Оптовикам</a></li>
-						<li><a href="#">Контакты</a></li>
+						<?php
+				            $args = array(
+				            'theme_location'  => '',
+				            'menu'            => 'top-menu', 
+				            'container'       => flase, 
+				            'container_class' => '', 
+				            'container_id'    => '',
+				            'menu_class'      => 'menu', 
+				            'menu_id'         => '',
+				            'echo'            => true,
+				            'fallback_cb'     => 'wp_page_menu',
+				            'before'          => '',
+				            'after'           => '',
+				            'link_before'     => '',
+				            'link_after'      => '',
+				            'items_wrap'      => '<ul class="main-menu">%3$s</ul>',
+				            'depth'           => 0
+				        );
+				        wp_nav_menu($args ); 
+				        ?>
     				</ul>
    				</div>
    			</div>
