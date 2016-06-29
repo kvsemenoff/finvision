@@ -47,7 +47,7 @@
 							<div id="tab_c<?php echo $num+4; ?>" class="tab_c4"><img src="<?php echo $image['url']; ?>" alt=""></div>
 							</div>
 							<div class="anz-relative anz-relative_style">
-							<div class="anz-absolute anz-relative_style">
+							<div class="anz-absolute anz-absolute_style">
 							<?php $image = get_field('картинка_1'); ?>
 							<label for="tab_<?php echo $num+1; ?>" id="tab_l<?php $num+1; ?>" class="anz-img tab_l1"><img src="<?php echo $image['url']; ?>" alt=""></label>
 							</div>
@@ -97,7 +97,7 @@
 		</div>
 		<div class="row">
 			
-				<div class="col-md-7 col-sm-12 col-xs-12 anz-padding2">
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 anz-padding2">
 
 					<div class="anz-float">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/zavod.jpg" alt="">
@@ -107,7 +107,7 @@
 					</div>
 				
 				</div>
-				<div class="col-md-5 col-sm-12 col-xs-12 anz-padding2">
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 anz-padding2">
 					<span class="anz-title">о компании</span>
 					<div class="anz-line"></div>
 					<span class="anz-subtitle">Финский производитель видеорегистраторов</span>

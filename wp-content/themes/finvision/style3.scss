@@ -582,7 +582,8 @@ display:none;
 	img:first-child{
 		margin-left: 0px;
 	}
-	img:not(.anz-float img:first-child){
+	img:not( img:first-child ){
+		float: right;
 		margin-right: 0px;
 	}
 }
@@ -664,6 +665,7 @@ display:none;
 		height: auto;
 	}
 	img:not(:first-child){
+		float: right;
 		margin-right: 0px;
 	}
 }

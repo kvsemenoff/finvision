@@ -472,7 +472,8 @@
   margin: 5px; }
 .anz-float img:first-child {
   margin-left: 0px; }
-.anz-float img:not(.anz-float img:first-child) {
+.anz-float img:not(img:first-child) {
+  float: right;
   margin-right: 0px; }
 
 .clear {
@@ -535,6 +536,7 @@
     width: 62%;
     height: auto; }
   .anz-float img:not(:first-child) {
+    float: right;
     margin-right: 0px; }
 
   .clear {
