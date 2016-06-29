@@ -11,7 +11,7 @@ Template name: Каталог
 		<div class="row no-gutter">
 			<div class="col-md-12 col-sm-12 col-xs-12 ah-optowrapper">
 				<div class="ah-contact-margin"><?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' - '); ?></div>
-				<h1 class="ah-h1"><?php the_title(); ?></h1>
+				<span class="ah-catalog-title">Каталог товаров</span>
 				<div class="ah-line5"></div>
 				<div class="anz-product ah-product1">
 					<span>Мы показываем только лучшие модели и только для Вас</span>
@@ -22,13 +22,13 @@ Template name: Каталог
 					
 					<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 					
-					<div class="col-md-6 col-sm-12 col-xs-12">
+					<div class="col-md-5 col-sm-12 col-xs-12 ah-catalog-border">
 						<div class="anz-tab-galary">
 							<input type="radio" id="tab_<?php echo $num+1; ?>" name="tab<?php echo $num; ?>" class="tab_1" checked/>
 							<input type="radio" id="tab_<?php echo $num+2; ?>" name="tab<?php echo $num; ?>" class="tab_2"/>
 							<input type="radio" id="tab_<?php echo $num+3; ?>" name="tab<?php echo $num; ?>" class="tab_3"/>
 							<input type="radio" id="tab_<?php echo $num+4; ?>" name="tab<?php echo $num; ?>" class="tab_4"/>
-							<div class="anz-relative anz-relative_margin">
+							<div class="anz-relative anz-relative_margin ah-relative">
 							<?php $image = get_field('картинка_1'); ?>
 							<div id="tab_c<?php echo $num+1; ?>" class="tab_c1"><img src="<?php echo $image['url']; ?>" alt=""></div>
 							<?php $image = get_field('картинка_2'); ?>
@@ -63,7 +63,7 @@ Template name: Каталог
 							</div>
 							</div>
 						</div>
-						<div class="anz-padding">
+						<div class="anz-padding ah-catalog-padding">
 							<span class="anz-title ah-background"><?php the_title(); ?></span>
 							<span class="anz-char"><?php the_field('характеристика_1'); ?></span>
 							<span class="anz-char"><?php the_field('характеристика_2'); ?></span>
