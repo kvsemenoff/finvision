@@ -366,8 +366,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+.ah-background{
+    text-align: center !important;
+}
 .ah-catalog-border{
     margin: 0 !important;
+    margin-top: 10px !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 .ah-product1{
     padding: 20px !important;
