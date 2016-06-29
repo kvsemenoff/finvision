@@ -255,6 +255,50 @@
 
 }
 
+@media only screen and (max-width : 380px) {
+	.anz-items{
+	    position:relative;
+	    overflow: hidden;
+	    height: 302px;;
+	}
+	.anz-item{
+	    position:absolute;
+	    top: 0%;
+	    left: calc(100% + ((100% - 278px)/2));
+	    width: 100%;
+	    height: 302px;
+	    z-index: 100;
+	    transition: left .5s ease-out;
+	    opacity: 1;
+	}
+	.anz-item-before{
+	    left: calc(0% + ((100% - 278px)/2));
+	    z-index: 100;
+	    opacity: 1;
+	    //transition: all 1s ease-out 1s !important;
+	}
+	.anz-item-before2{
+	    left: calc(-100% + ((100% - 278px)/2));
+	    z-index: 50 !important;
+	    opacity: 1;
+	    //transition: all 1s ease-out 1s !important;
+	}
+	.anz-item-after{
+	    left: calc(200% + ((100% - 278px)/2));
+	    z-index: 100;
+	    opacity: 1;
+	    //transition: all 1s ease-out 1s !important;
+
+	}
+	.anz-item-after2{
+	    left: calc(300% + ((100% - 278px)/2));
+	    z-index: 50 !important;
+	    opacity: 1;
+	    //transition: all 1s ease-out 1s !important;
+
+	}
+
+}
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
     
@@ -397,7 +441,7 @@ display:none;
 .anz-product{
 	background: #0f4085;
 	width: 100%;
-	height: 761px;
+	//height: 761px;
 	text-align: center;
 	padding: 30px 10px;
 	h1{
@@ -551,25 +595,289 @@ display:none;
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  
+  /*about company*/
+
+	.anz-padding2{
+		padding: 15px !important;
+	.anz-title{
+		display: block;
+		font-family: "RobotoRegular";
+		font-size: 27px;
+		color: #3078c2;
+		text-transform: uppercase;
+		margin-bottom: 11px;
+	}
+	.anz-line{
+		width: 100%;
+		height: 3px;
+		background: #0f4085;
+		display: block;
+	}
+	.anz-subtitle{
+		font-family: "RobotoMedium";
+		font-size: 21px;
+		letter-spacing: .02em;
+		display: block;
+		white-space: normal;
+		margin-top: 8px;
+
+	}
+	p{
+		font-family: "RobotoLight";
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 20px;
+	}
+	a{
+		display: block;
+		width: 152px;
+		height: 37px;
+		background: #3078c2 url(./img/button-arrow.png) no-repeat 94.5% 14px;
+		line-height: 37px;
+		border-radius: 3px;
+		color: #fff;
+		margin-left: -4px;
+		margin-top: 16px;
+		font-family: "RobotoMedium";
+		font-size: 14px;
+		padding-left: 13px;
+		letter-spacing: .02em;
+		//border-bottom: 2px solid #0c3268;	
+		text-transform: uppercase;
+	}
+}
+.anz-float{
+
+	img{
+		width: 35%;
+		height: auto;	
+		float: left;
+		margin: 1%;
+
+	}
+	img:first-child{
+		//margin-left: 0px;
+		width: 62%;
+		height: auto;
+	}
+	img:not(img:first-child){
+		margin: 0px;
+	}
+}
+.clear{
+	clear: both;
+}
+/*about company*/
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+	/*road*/
+
+.container_style{
+	background: url(./img/backgroung-road.jpg) no-repeat calc(50% - 240px) top;
+	//margin-top: 45px;
+	//height: 500px;
+	padding-bottom: 15px;
+}
+
+.anz-fin{
+    font-family: "RobotoBold";
+    font-size: 31px;
+    letter-spacing: .065em;
+    color: #fff;
+    padding-top: 30px;
+    display: block;
+    margin-left: 0px;
+    text-align: center;
+}
+.anz-solve{
+	font-family: "RobotoLight";
+	font-size: 18px;
+	letter-spacing: .05em;
+	color: #fff;
+	margin-top: 10px;
+	display: block;
+	margin-left: 0px;
+	text-align: center;
+}
+.anz-button{
+	display: block;
+	width: 278px;
+	height: 63px;
+	background: #fff;
+	line-height: 63px;
+	border-radius: 3px;
+	color: #1f4d8d;
+	font-family: "RobotoBold";
+	font-size: 17px;
+	padding-left: 0px;
+	letter-spacing: -.03em;
+	border-bottom: 2px solid #c7c7c7;	
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 264px;
+}
+.no-one{
+	display: none;
+}
+/*road*/
+	    
 
 }
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 752px) {
+/*road*/
 
+.container_style{
+	background: url(./img/backgroung-road.jpg) no-repeat calc(50% - 248px) top;
+	//margin-top: 45px;
+	//height: 500px;
+}
+/*road*/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.anz-background{
+		background: none;
+		padding: 0px 0px;
+		div[class|="col"]{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
 
+/*slider*/
+/*slider*/
+	.anz-left-arrow_margin{
+		display: none;
+	}
+	.anz-right-arrow_margin{
+		display: none;
+	}
+/*slider*/
+/*slider*/
+
+  /*about company*/
+	.anz-padding2{
+		padding: 15px !important;
+		.anz-title{
+			display: block;
+			text-align: center;
+			font-family: "RobotoRegular";
+			font-size: 27px;
+			color: #3078c2;
+			text-transform: uppercase;
+			margin-bottom: 11px;
+		}
+		.anz-line{
+			width: 100%;
+			height: 3px;
+			background: #0f4085;
+			display: block;
+		}
+		.anz-subtitle{
+			font-family: "RobotoMedium";
+			font-size: 21px;
+			letter-spacing: .02em;
+			text-align: center;
+			display: block;
+			white-space: normal;
+			margin-top: 8px;
+
+		}
+	}
+/*about company*/
 }
+
+@media only screen and (max-width : 380px) {
+	/*products*/
+	.anz-product{
+		background: #0f4085;
+		width: 100%;
+		
+		text-align: center;
+		padding: 30px 10px;
+		h1{
+			color: #fff;
+			font-family: "RobotoRegular";
+			font-size: 27px;
+			text-transform: uppercase;
+			margin-bottom: 8px;
+		}
+		.anz-white{
+			font-family: "RobotoRegular";
+			font-size: 16px;
+			letter-spacing: -.02em;
+			color: #fff;
+			display: block;
+			line-height: 28px;
+		}
+		.anz-items_margin{
+			margin-top: 23px;
+		}
+		.anz-item_style{
+			width: 278px;
+			height: 302px;
+			border-radius: 4px;
+			border: 1px solid #103467;
+			background: #fff;
+			overflow: hidden;
+		}
+		.tab_c1,.tab_c2,.tab_c3,.tab_c4{
+			width: 278px;
+			img{width:278px;}
+		}
+		
+		.anz-title{
+			background: #dae4f2;
+			width: 100%;
+			height: 53px;
+			font-family: "RobotoBold";
+			font-size: 20px;
+			color: #0f4085;
+			display: block;
+			line-height: 53px;
+			text-transform: uppercase; 
+		}
+		.anz-char{
+			display: none;
+		}
+		.anz-padding{
+			padding: 15px;
+		}
+		a{
+			width: 117px;
+		    height: 40px;
+		    border-radius: 2px;
+		    background: #3078c2;
+		    color: #fff;
+		    font-family: "RobotoBold";
+		    font-size: 11.8px;
+		    line-height: 40px;
+		    border: 1px solid #3078c2;
+		    display: inline-block;
+		    text-transform: uppercase;
+		    margin: 18px 2px 0px 2px;
+		}
+		a:hover{
+			background: #dae4f2;
+			color: #3078c2;
+		}
+		.anz-relative_style{
+			display: none;
+		}
+
+	}
+
+	/*products*/
+}
+
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
