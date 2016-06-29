@@ -323,6 +323,18 @@
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .ah-catalog-border {
+    margin: 0 !important; }
+
+  .ah-product1 {
+    padding: 20px !important; }
+
+  .ah-f-email span {
+    margin-left: 36px; }
+
+  .ah-f-copyright {
+    text-align: center !important; }
+
   .ah-line2 {
     width: 197px; }
 
