@@ -582,6 +582,9 @@ display:none;
 	img:first-child{
 		margin-left: 0px;
 	}
+	img:not(.anz-float img:first-child){
+		margin-right: 0px;
+	}
 }
 .clear{
 	clear: both;
@@ -656,12 +659,12 @@ display:none;
 
 	}
 	img:first-child{
-		//margin-left: 0px;
+		margin-left: 0px;
 		width: 62%;
 		height: auto;
 	}
-	img:not(img:first-child){
-		margin: 0px;
+	img:not(:first-child){
+		margin-right: 0px;
 	}
 }
 .clear{
@@ -829,8 +832,8 @@ display:none;
 			overflow: hidden;
 		}
 		.tab_c1,.tab_c2,.tab_c3,.tab_c4{
-			width: 278px;
-			img{width:278px;}
+			width: 273px;
+			img{width:273px;}
 		}
 		
 		.anz-title{
@@ -848,7 +851,7 @@ display:none;
 			display: none;
 		}
 		.anz-padding{
-			padding: 15px;
+			padding: 13px;
 		}
 		a{
 			width: 117px;

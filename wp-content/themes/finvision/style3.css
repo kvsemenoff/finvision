@@ -472,6 +472,8 @@
   margin: 5px; }
 .anz-float img:first-child {
   margin-left: 0px; }
+.anz-float img:not(.anz-float img:first-child) {
+  margin-right: 0px; }
 
 .clear {
   clear: both; }
@@ -529,10 +531,11 @@
     float: left;
     margin: 1%; }
   .anz-float img:first-child {
+    margin-left: 0px;
     width: 62%;
     height: auto; }
-  .anz-float img:not(img:first-child) {
-    margin: 0px; }
+  .anz-float img:not(:first-child) {
+    margin-right: 0px; }
 
   .clear {
     clear: both; }
@@ -669,9 +672,9 @@
       background: #fff;
       overflow: hidden; }
     .anz-product .tab_c1, .anz-product .tab_c2, .anz-product .tab_c3, .anz-product .tab_c4 {
-      width: 278px; }
+      width: 273px; }
       .anz-product .tab_c1 img, .anz-product .tab_c2 img, .anz-product .tab_c3 img, .anz-product .tab_c4 img {
-        width: 278px; }
+        width: 273px; }
     .anz-product .anz-title {
       background: #dae4f2;
       width: 100%;
@@ -685,7 +688,7 @@
     .anz-product .anz-char {
       display: none; }
     .anz-product .anz-padding {
-      padding: 15px; }
+      padding: 13px; }
     .anz-product a {
       width: 117px;
       height: 40px;
