@@ -171,7 +171,7 @@
   margin-bottom: 24px; }
 
 .ah-line5 {
-  width: 153px;
+  width: 246px;
   height: 3px;
   background-color: #0f4085;
   margin: 0 auto; }
@@ -236,7 +236,8 @@
   padding: 40px; }
 
 .ah-contact-margin {
-  margin-top: 41px; }
+  margin-top: 27px;
+  margin-bottom: 21px; }
 
 .ah-contacts-span {
   font-size: 20px;
@@ -283,7 +284,40 @@
   height: 469px; }
 
 .ah-product1 {
-  background: #fff !important; }
+  background: #fff !important;
+  padding: 30px 60px !important; }
+  .ah-product1 span {
+    font-family: "RobotoRegular";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em; }
+
+.ah-catalog-title {
+  font-family: "RobotoRegular";
+  font-size: 27px;
+  text-transform: uppercase; }
+
+.ah-catalog-border {
+  border: 3px solid #ced9e9;
+  margin: 33px 43px; }
+
+.ah-relative {
+  margin-bottom: 55px !important; }
+
+.ah-background {
+  background: #fff !important;
+  text-align: left !important;
+  font-family: "RobotoBold";
+  font-size: 24px !important; }
+
+.ah-catalog-padding {
+  padding-bottom: 50px !important; }
+
+.ah-f-email span {
+  padding-left: 0 !important; }
+
+.ah-f-copyright {
+  margin-top: 7px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

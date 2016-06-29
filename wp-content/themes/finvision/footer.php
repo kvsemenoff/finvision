@@ -41,19 +41,19 @@
 						<a href="#">На карте</a>
 					</div>
 				</div>	
-				<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="col-md-5 col-sm-12 col-xs-12">
 					<div class="f-contacts">
 						<span>+7 (345) 345-54-65 | +7 (435) 345-54-65</span>   
 						<a href="#zvonok" name="modal">Заказать бесплатную консультацию</a>           
 					</div>
 				</div>	
-				<div class="col-md-2 col-sm-12 col-xs-12">
-					<div class="f-email">
+				<div class="col-md-1 col-sm-12 col-xs-12">
+					<div class="f-email ah-f-email">
 						<span>contacts@mail.ru</span>
 					</div>
 				</div>	
 				<div class="col-md-3 col-sm-12 col-xs-12">
-					<div class="f-copyright">
+					<div class="f-copyright ah-f-copyright">
 						© 2016  Finvision All Rights Reserved
 					</div>
 				</div>	
