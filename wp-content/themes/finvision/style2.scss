@@ -14,11 +14,17 @@
     padding-bottom: 46px;
 }
 .ah-h1{
+    display: inline-block;
+    position: relative;
     text-transform: uppercase;
 }
-.ah-line1{
-    width: 262px;
+.ah-h1:before{
+    position: absolute;
+    content: "";   
+    width: 100%;
     height: 3px;
+    left: 0;
+    top: 41px;
     background-color: #1b4b90;
 }
 .kama_breadcrumbs{
@@ -101,7 +107,7 @@
 }
 .ah-cart-link1{
     display: inline-block;
-    width: 258px;
+    width: 226px;
     height: 51px;
     background-color: #1e4e93;
     color: #fff;
@@ -139,7 +145,7 @@
 }
 .ah-cart-link2{
     display: inline-block;
-    width: 258px;
+    width: 226px;
     height: 51px;
     background-color: #1e4e93;
     margin-left: 7px;
@@ -366,26 +372,47 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-.ah-background{
-    text-align: center !important;
-}
-.ah-catalog-border{
-    margin: 0 !important;
-    margin-top: 10px !important;
-    padding-left: 0;
-    padding-right: 0;
-}
-.ah-product1{
-    padding: 20px !important;
-}
-.ah-f-email{
-    span{
-        margin-left: 36px;
+    .ah-right-block{
+        text-align: center;
     }
-}
-.ah-f-copyright{
-    text-align: center !important;
-}
+    .ah-contactwrapper1{
+        padding: 0 10px;
+    }
+    .ah-contacts-span6{
+        margin-bottom: 0;
+        margin-left: 22px;
+    }
+    .ah-contacts-span3{
+        margin-bottom: 0;
+    }
+    .ah-contacts-span1{
+        margin-bottom: 10px;
+    }
+    .ah-contactwrapper{
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    .ah-background{
+        text-align: center !important;
+    }
+    .ah-catalog-border{
+        margin: 0 !important;
+        margin-top: 10px !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ah-product1{
+        padding: 20px !important;
+    }
+    .ah-f-email{
+        span{
+            margin-left: 36px;
+        }
+    }
+    .ah-f-copyright{
+        text-align: center !important;
+    }
 // *****************************************************
     .ah-line2{
         width: 197px;
@@ -423,25 +450,34 @@
         }
     }
 // ********** Карточка товара **********
+    .ah-h1:before{
+        top: 35px !important;
+    }
     .ah-h1{
-        font-size: 27px;
+        font-size: 24px !important;
     }
     .ah-wrapper{
         box-shadow: none;
         margin-top: 20px;
         padding-left: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 25px !important;
+        margin: 0 !important;
     }
     .ah-line1{
         width: 100%;
     }
     .ah-img-block{
-        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 7px;
+        // margin-left: 0;
     }
     .ah-cart-list2{
+        width: 100%;
         li{
-            margin-right: 10px;
+            margin-right: 6px !important;
             margin-top: 10px;
+            width: 29.33%;
+            text-align: center;
             img{
                 width: 75px;
                 height: 50px;
@@ -481,13 +517,13 @@
         margin-left: 0;
     }
     .ah-cart-link1{
-        display: block;
-        margin-left: 0;
-        margin-top: 20px;
+        display: block !important;
+        margin: 0 auto;
+        margin-top: 0 !important;
     }
     .ah-cart-link2{
-        display: block;
-        margin-left: 0;
+        display: block !important;
+        margin: 0 auto;
         margin-top: 20px;
     }
 // ********** Карточка товара **********
@@ -508,14 +544,19 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-    
+  
 }
 
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+   .ah-cart-link1{
+        width: 258px;
+    }
+    .ah-cart-link2{
+        width: 258px;
+    }
 }
 
 /* Extra Small Devices, Phones */
