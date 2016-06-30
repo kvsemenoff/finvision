@@ -148,6 +148,7 @@ $('.owl-carousel').owlCarousel({
         $('input[type="text"]').removeClass("error-input");
     });
 
+
     $(".form1").submit(function() { 
         var tel = $(this).find('input[name="tel"]');
         var empty = false;
@@ -173,78 +174,100 @@ $('.owl-carousel').owlCarousel({
 
 
 // ******************************** ah-item ********************************
-
-    $("#form2_submit").click(function () {
-       
-        var empty = true;
-        $('.form2  input[name="tel"]').each(function(o){
-            if ($(this).val() == ""){empty = false;}
-        });
-        if (empty == false){
-          alert("Заполните, пожалуйста, Ваш телефон");
-        }else{
-          $.ajax({
-            type: 'POST',
-            url: '/sendmessage.php',
-            data: $('.form2').serialize(),
-            success: function(data) {
-            }
-          });
-          $('.window').hide();
-          $('a[href=#thanks]').trigger('click');
+  
+    $(".form2, .form3, .form4").submit(function() { 
+        var tel = $(this).find('input[name="tel"]');
+        var empty = false;
+        if (tel.val() == ""){
+            empty = true;
         }
-        var empty = true;
-        return false;
-    }); 
-
-    $("#form3_submit").click(function () {
-       
-        var empty = true;
-        $('.form3  input[name="tel"]').each(function(o){
-            if ($(this).val() == ""){empty = false;}
-        });
-        if (empty == false){
-          alert("Заполните, пожалуйста, Ваш телефон");
+        if (empty == true){
+            tel.addClass("error-input");
+            tel.focus();
         }else{
-          $.ajax({
-            type: 'POST',
-            url: '/sendmessage.php',
-            data: $('.form3').serialize(),
-            success: function(data) {
-            }
-          });
-          $('.window').hide();
-          $('a[href=#thanks]').trigger('click');
+            var form_data = $(this).serialize(); 
+            $.ajax({
+                type: "POST", 
+                url: "/sendmessage.php", 
+                data: form_data,
+                success: function() {
+                    cleanTnakns(this);
+                }
+            });
         }
-        var empty = true;
         return false;
-    }); 
+    });
+    // $("#form2_submit").click(function () {
+       
+    //     var empty = true;
+    //     $('.form2  input[name="tel"]').each(function(o){
+    //         if ($(this).val() == ""){empty = false;}
+    //     });
+    //     if (empty == false){
+    //       alert("Заполните, пожалуйста, Ваш телефон");
+    //     }else{
+    //       $.ajax({
+    //         type: 'POST',
+    //         url: '/sendmessage.php',
+    //         data: $('.form2').serialize(),
+    //         success: function(data) {
+    //         }
+    //       });
+    //       $('.window').hide();
+    //       $('a[href=#thanks]').trigger('click');
+    //     }
+    //     var empty = true;
+    //     return false;
+    // }); 
+
+    // $("#form3_submit").click(function () {
+       
+    //     var empty = true;
+    //     $('.form3  input[name="tel"]').each(function(o){
+    //         if ($(this).val() == ""){empty = false;}
+    //     });
+    //     if (empty == false){
+    //       alert("Заполните, пожалуйста, Ваш телефон");
+    //     }else{
+    //       $.ajax({
+    //         type: 'POST',
+    //         url: '/sendmessage.php',
+    //         data: $('.form3').serialize(),
+    //         success: function(data) {
+    //         }
+    //       });
+    //       $('.window').hide();
+    //       $('a[href=#thanks]').trigger('click');
+    //     }
+    //     var empty = true;
+    //     return false;
+    // }); 
 // ******************************** ah-item ********************************
 
 // ******************************** ah-optovik ********************************
 
-$("#form4_submit").click(function () {
+// $("#form4_submit").click(function () {
        
-        var empty = true;
-        $('.form4 input[name="tel"]').each(function(o){
-            if ($(this).val() == ""){empty = false;}
-        });
-        if (empty == false){
-          alert("Заполните, пожалуйста, Ваш телефон");
-        }else{
-          $.ajax({
-            type: 'POST',
-            url: '/sendmessage.php',
-            data: $('.form4').serialize(),
-            success: function(data) {
-            }
-          });
-          $('.window').hide();
-          $('a[href=#thanks]').trigger('click');
-        }
-        var empty = true;
-        return false;
-    }); 
+    //     var empty = true;
+    //     $('.form4 input[name="tel"]').each(function(o){
+    //         if ($(this).val() == ""){empty = false;}
+    //     });
+    //     if (empty == false){
+    //       alert("Заполните, пожалуйста, Ваш телефон");
+    //     }else{
+    //       $.ajax({
+    //         type: 'POST',
+    //         url: '/sendmessage.php',
+    //         data: $('.form4').serialize(),
+    //         success: function(data) {
+    //         }
+    //       });
+    //       $('.window').hide();
+    //       $('a[href=#thanks]').trigger('click');
+    //     }
+    //     var empty = true;
+    //     return false;
+    // }); 
 // ******************************** ah-optovik ********************************
 
 });
