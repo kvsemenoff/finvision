@@ -96,19 +96,19 @@
 <!-- ******************************** ah-item ******************************** -->
 
 <div id="kupit" class="window"> 
-    <form action="" class="common-form form2">
+    <form action="" class="common-form form2 ah-common-form">
         <div class="an-exit">
             <span class="an-exit__krest"></span>
         </div>
         <span class="form-title">Купите в интернет-магазине</span>
         <span class="form-subtitle">Оставьте заявку и наш специалист перезвонит вам в течении 3 минут</span>
         <input type="text" name="tel" placeholder="+7 900 000 00 00" class="phone">
-        <input type="submit" id="form2_submit" value="Купить в интернет-магазине">
+        <input type="submit" id="form2_submit" class="ah-form2_submit" value="Купить в интернет-магазине">
     </form>
 </div>
 
 <div id="kupit1" class="window"> 
-    <form action="" class="common-form form3">
+    <form action="" class="common-form form3 ah-common-form">
         <div class="an-exit">
             <span class="an-exit__krest"></span>
         </div>
@@ -143,7 +143,7 @@
             <span class="an-exit__krest"></span>
         </div>
         <span class="form-title ah-thanks1">Спасибо! Ваша заявка принята!</span>
-        <span class="form-subtitle ah-thanks2">Наш специалист свяжется с вами в ближайшее время</span>
+        <span class="form-subtitle ah-thanks2 ">Наш специалист свяжется с вами в ближайшее время</span>
     </form>
 </div>
 

@@ -7,7 +7,6 @@
 				<div class="col-md-4 col-sm-12 col-xs-12">
 				<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' - '); ?>
 					<h1 class="ah-h1"><?php the_title(); ?></h1>
-					<div class="ah-line1"></div>
 				</div>
 
 				<div class="clearfix"></div>
