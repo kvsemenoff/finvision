@@ -480,6 +480,10 @@
   clear: both; }
 
 /*about company*/
+.anz-responsive {
+  display: block;
+  margin: 0 calc((100% - 1200px)/2); }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -545,6 +549,12 @@
   /*about company*/ }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .anz-responsive {
+    margin: 0px;
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
   /*road*/
   .container_style {
     background: url(./img/backgroung-road.jpg) no-repeat calc(50% - 240px) top;

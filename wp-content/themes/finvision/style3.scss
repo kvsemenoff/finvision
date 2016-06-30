@@ -594,6 +594,15 @@ display:none;
 
 
 
+	.anz-responsive{
+		display: block;
+    	margin: 0 calc((100% - 1200px)/2);
+    	//width: 100%;
+    	//height: auto;
+	}
+
+
+
 
 /*==========  Desktop First Method  ==========*/
 
@@ -677,6 +686,16 @@ display:none;
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.anz-responsive{
+		margin: 0px;
+		display: block;
+    	max-width: 100%;
+    	height: auto;
+	}
+
+
+
+
 	/*road*/
 
 .container_style{

@@ -38,7 +38,7 @@
 				<div class="col-md-3 col-sm-12 col-xs-12">
 					<div class="f-address">
 						<span>123435, Москва, ул. Литейная, д. 12</span>
-						<a href="#">На карте</a>
+						<a href="/?p=18#map">На карте</a>
 					</div>
 				</div>	
 				<div class="col-md-5 col-sm-12 col-xs-12">
