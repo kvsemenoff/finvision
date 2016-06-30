@@ -364,13 +364,15 @@ h1 {
     text-decoration: underline;
     margin-left: 30px;
     margin-top: 13px; }
-  .footer-middle .f-contacts span {
-    display: block;
+  .footer-middle .f-contacts .a-zvon:first-child:before {
+    padding-left: 30px; }
+  .footer-middle .f-contacts .a-zvon, .footer-middle .f-contacts span {
+    display: inline-block;
     position: relative;
-    padding-left: 30px;
+    color: #fff;
     font-family: "RobotoRegular";
     font-size: 20px; }
-  .footer-middle .f-contacts span:before {
+  .footer-middle .f-contacts .a-zvon:first-child:before {
     position: absolute;
     content: "";
     background: url(./img/phone_ico3.png) no-repeat left top;
@@ -378,7 +380,7 @@ h1 {
     height: 17px;
     margin-left: -25px;
     margin-top: 5px; }
-  .footer-middle .f-contacts a {
+  .footer-middle .f-contacts .a-zakaz {
     display: inline-block;
     color: #98bfe7;
     text-decoration: underline;
@@ -386,13 +388,14 @@ h1 {
     margin-top: 8px; }
   .footer-middle .f-email {
     text-align: right; }
-    .footer-middle .f-email span {
+    .footer-middle .f-email .emailei {
       display: block;
       position: relative;
+      color: #fff;
       padding-left: 30px;
       font-family: "RobotoRegular";
       font-size: 20px; }
-    .footer-middle .f-email span:before {
+    .footer-middle .f-email .emailei:before {
       position: absolute;
       content: "";
       background: url(./img/email_ico.png) no-repeat left top;
@@ -425,6 +428,8 @@ h1 {
       font-family: "RobotoLight";
       font-size: 17px;
       color: #fff; }
+    .footer-menu li a:hover {
+      color: #a0c0ec; }
 
 .error-input {
   border: 2px solid #ee8879 !important; }
@@ -575,9 +580,28 @@ input {
     margin-bottom: 10px; }
 
   .footer-middle {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 25px; }
     .footer-middle .f-address {
       margin-bottom: 25px; }
+      .footer-middle .f-address span {
+        display: block;
+        position: relative;
+        padding-left: 0px; }
+      .footer-middle .f-address span:before {
+        position: absolute;
+        content: "";
+        background: url(./img/addr_ico.png) no-repeat left center;
+        width: 17px;
+        height: 17px;
+        margin-left: -25px;
+        margin-top: 5px; }
+      .footer-middle .f-address a {
+        display: inline-block;
+        color: #98bfe7;
+        text-decoration: underline;
+        margin-left: 0px;
+        margin-top: 13px; }
 
   .footer-bottom {
     text-align: center; }
@@ -592,9 +616,50 @@ input {
 
   .ho-lang-box-footer {
     text-align: center !important;
-    margin-top: 25px; }
+    margin-top: 10px; }
     .ho-lang-box-footer span {
-      margin-left: 0px; } }
+      margin-left: 0px; }
+
+  .footer-middle .f-contacts .a-zvon:first-child:before {
+    padding-left: 30px; }
+  .footer-middle .f-contacts .a-zvon {
+    display: block;
+    position: relative;
+    color: #fff;
+    font-family: "RobotoRegular";
+    font-size: 20px; }
+  .footer-middle .f-contacts .a-zvon:first-child:before {
+    position: absolute;
+    content: "";
+    background: url(./img/phone_ico3.png) no-repeat left top;
+    width: 17px;
+    height: 17px;
+    margin-left: -25px;
+    margin-top: 5px; }
+  .footer-middle .f-contacts .a-zakaz {
+    display: block;
+    color: #98bfe7;
+    text-decoration: underline;
+    margin-left: 0px;
+    margin-top: 8px; }
+  .footer-middle .f-email {
+    text-align: right; }
+    .footer-middle .f-email span {
+      display: block;
+      position: relative;
+      padding-left: 0px;
+      font-family: "RobotoRegular";
+      font-size: 20px; }
+    .footer-middle .f-email span:before {
+      position: absolute;
+      content: "";
+      background: url(./img/email_ico.png) no-repeat left top;
+      width: 24px;
+      height: 18px;
+      margin-left: -25px;
+      margin-top: 5px; }
+  .footer-middle .ah-f-email span {
+    margin-left: 0px; } }
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */

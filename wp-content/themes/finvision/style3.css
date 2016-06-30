@@ -676,7 +676,7 @@
     .anz-product .tab_c1, .anz-product .tab_c2, .anz-product .tab_c3, .anz-product .tab_c4 {
       width: 273px; }
       .anz-product .tab_c1 img, .anz-product .tab_c2 img, .anz-product .tab_c3 img, .anz-product .tab_c4 img {
-        width: 273px; }
+        width: 90%; }
     .anz-product .anz-title {
       background: #dae4f2;
       width: 100%;
@@ -712,6 +712,14 @@
 
   /*products*/ }
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /*products*/
+  .anz-product .tab_c1, .anz-product .tab_c2, .anz-product .tab_c3, .anz-product .tab_c4 {
+    width: 273px; }
+    .anz-product .tab_c1 img, .anz-product .tab_c2 img, .anz-product .tab_c3 img, .anz-product .tab_c4 img {
+      width: 76%; }
+
+  /*products*/ }
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */

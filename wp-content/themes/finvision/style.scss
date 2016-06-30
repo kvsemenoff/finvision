@@ -423,15 +423,17 @@ to {left: -310px;}
         }
     }
     .f-contacts{
-         span{
-            display: block;
-            position: relative;
-           
+        .a-zvon:first-child:before{
             padding-left: 30px;
+        }
+        .a-zvon, span{
+            display: inline-block;
+            position: relative;
+            color: #fff;
             font-family: "RobotoRegular";
             font-size: 20px;
         }
-        span:before{
+        .a-zvon:first-child:before{
             position: absolute;
             content: "";
             background: url(./img/phone_ico3.png) no-repeat left top;
@@ -440,7 +442,7 @@ to {left: -310px;}
             margin-left: -25px;
             margin-top: 5px;
         }
-        a{
+        .a-zakaz{
             display: inline-block;
             color: #98bfe7;
             text-decoration: underline;
@@ -450,15 +452,15 @@ to {left: -310px;}
     }
     .f-email{
         text-align: right;
-        span{
+        .emailei{
             display: block;
             position: relative;
-           
+            color: #fff;
             padding-left: 30px;
             font-family: "RobotoRegular";
             font-size: 20px;
         }
-        span:before{
+        .emailei:before{
             position: absolute;
             content: "";
             background: url(./img/email_ico.png) no-repeat left top;
@@ -498,6 +500,9 @@ to {left: -310px;}
             font-family: "RobotoLight";
             font-size: 17px;
             color: #fff;
+        }
+        a:hover{
+            color: #a0c0ec;
         }
     }
 }
@@ -690,8 +695,30 @@ input{
    }
    .footer-middle{
         text-align: center;
+        padding-bottom: 25px;
         .f-address{
             margin-bottom: 25px;
+            span{
+                display: block;
+                position: relative;
+                padding-left: 0px;
+            }
+            span:before{
+                position: absolute;
+                content: "";
+                background: url(./img/addr_ico.png) no-repeat left center;
+                width: 17px;
+                height: 17px;
+                margin-left: -25px;
+                margin-top: 5px;
+            }
+            a{
+                display: inline-block;
+                color: #98bfe7;
+                text-decoration: underline;
+                margin-left: 0px;
+                margin-top: 13px;
+            }
         }
    }
    .footer-bottom{
@@ -707,16 +734,69 @@ input{
    }
    .ho-lang-box-footer{
         text-align: center !important;
-        margin-top: 25px;
+        margin-top: 10px;
         span{
             margin-left: 0px;
         }
    }
+   .footer-middle{
+        .f-contacts{
+            .a-zvon:first-child:before{
+                padding-left: 30px;
+            }
+            .a-zvon{
+                display: block;
+                position: relative;
+                color: #fff;
+                font-family: "RobotoRegular";
+                font-size: 20px;
+            }
+            .a-zvon:first-child:before{
+                position: absolute;
+                content: "";
+                background: url(./img/phone_ico3.png) no-repeat left top;
+                width: 17px;
+                height: 17px;
+                margin-left: -25px;
+                margin-top: 5px;
+            }
+            .a-zakaz{
+                display: block;
+                color: #98bfe7;
+                text-decoration: underline;
+                margin-left: 0px;
+                margin-top: 8px;
+            }
+        }
+    
+        .f-email{
+            text-align: right;
+            span{
+                display: block;
+                position: relative;
+                padding-left: 0px;
+                font-family: "RobotoRegular";
+                font-size: 20px;
+            }
+            span:before{
+                position: absolute;
+                content: "";
+                background: url(./img/email_ico.png) no-repeat left top;
+                width: 24px;
+                height: 18px;
+                margin-left: -25px;
+                margin-top: 5px;
+            }
+        }
+        .ah-f-email span{
+            margin-left: 0px;
+        }
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-   
+    
 }
 
 /* Extra Small Devices, Phones */
