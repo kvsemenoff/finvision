@@ -13,7 +13,6 @@ Template name: Контактная информация
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ah-contacts1.jpg" alt="ah-contacts1" class="img-responsive ah-img-contactblock">
 				<div class="ah-contact-margin"><?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' - '); ?></div>
 				<h1 class="ah-h1">Контактная информация</h1>
-				<div class="ah-line2"></div>
 				<div class="ah-contactwrapper1">
 					<p class="ah-contacts-text">Мы не собираемся тратить ваше время и нагружать бесполезной информацией.<br>Мы показываем только лучшие модели и только для Вас</p>
 					<span class="ah-contacts-span">Адрес основного офиса:</span>
@@ -21,8 +20,10 @@ Template name: Контактная информация
 					<span class="ah-contacts-span2">Отдел продаж по регионам: </span>
 					<span class="ah-contacts-span3">Поволжье, Урал, Западная и Восточная Сибирь, Дальний Восток</span>
 					<span class="ah-contacts-span4">Телефон и E-mail:</span>
-					<span class="ah-contacts-span5">+7 (343) 288-28-25,  +7 (343) 290-45-46</span>
-					<span class="ah-contacts-span6">contactus@namesite.ru</span>
+					<a href="tel:+7 (343) 288 28 25">
+						<span class="ah-contacts-span5">+7 (343) 288-28-25,<br class="hidden-sm hidden-md hidden-lg"><a href="tel:+7 (343) 290 45 46"><span class="ah-contacts-span5">+7 (343) 290-45-46</span></span>
+					</a></a>
+					<a href="mailto:contactus@namesite.ru"><span class="ah-contacts-span6">contactus@namesite.ru</span></a>
 					<span class="ah-contacts-span7">Схема проезда до офиса</span>
 				</div>
 				<!-- <div class="ah-img-contactblock1"> -->

@@ -554,6 +554,16 @@ input {
     padding-right: 30px !important; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .common-form {
+    display: block;
+    width: 300px !important;
+    padding: 35px !important; }
+    .common-form .form-title {
+      text-align: center; }
+    .common-form input[type="submit"] {
+      padding: 0 !important;
+      margin-bottom: 0 !important; }
+
   .main-menu li a {
     padding-left: 20px !important;
     padding-right: 20px !important;

@@ -658,7 +658,19 @@ input{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	 .main-menu{
+    .common-form{
+        display: block;
+        width: 300px !important; //300px
+        padding: 35px !important;
+        .form-title{
+            text-align: center;
+        }
+        input[type="submit"]{
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    } 
+    .main-menu{
         li{
             a{
                 padding-left: 20px !important;
