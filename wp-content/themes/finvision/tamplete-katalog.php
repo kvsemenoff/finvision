@@ -69,7 +69,7 @@ Template name: Каталог
 							<span class="anz-char"><?php the_field('характеристика_2'); ?></span>
 							<span class="anz-char"><?php the_field('характеристика_3'); ?></span>
 							<span class="anz-char"><?php the_field('характеристика_4'); ?></span>
-							<a href="<?php the_permalink(); ?>" >Купить</a>
+							<!-- <a href="<?php the_permalink(); ?>" >Купить</a> -->
 							<a href="<?php the_permalink(); ?>" >подробнее</a>
 						</div>
 					</div>

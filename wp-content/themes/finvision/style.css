@@ -387,7 +387,8 @@ h1 {
     margin-left: 30px;
     margin-top: 8px; }
   .footer-middle .f-email {
-    text-align: right; }
+    text-align: right;
+    margin-left: 35px; }
     .footer-middle .f-email .emailei {
       display: block;
       position: relative;
@@ -618,7 +619,8 @@ input {
 
   .f-email {
     text-align: center !important;
-    margin-top: 25px; }
+    margin-top: 25px;
+    margin-left: 0 !important; }
 
   .f-copyright {
     text-align: center !important;

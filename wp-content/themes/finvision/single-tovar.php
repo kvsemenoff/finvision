@@ -62,7 +62,7 @@
 							<li><?php the_field('характеристика_13'); ?></li>
 						</ul>
 						<div class="col-md-12 col-sm-12 col-xs-12 no-padding">
-							<a href="#kupit" name="modal" class="ah-cart-link1">Купить в интернет-магазине</a>
+							<!-- <a href="#kupit" name="modal" class="ah-cart-link1">Купить в интернет-магазине</a> -->
 							<a href="#kupit1" name="modal" class="ah-cart-link2">Купить <strong>в 1 клик</strong></a>
 						</div>
 					</div>
