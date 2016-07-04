@@ -555,6 +555,12 @@ input {
     padding-right: 30px !important; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .ho-lang-box-pop {
+    padding-top: 10px !important; }
+
+  .main-menu-pop {
+    margin-top: 15px !important; }
+
   .common-form {
     display: block;
     width: 300px !important;
