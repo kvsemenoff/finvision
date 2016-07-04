@@ -452,6 +452,7 @@ to {left: -310px;}
     }
     .f-email{
         text-align: right;
+        margin-left: 35px;
         .emailei{
             display: block;
             position: relative;
@@ -658,7 +659,25 @@ input{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	 .main-menu{
+    .ho-lang-box-pop{
+        padding-top: 10px !important;
+    }
+    .main-menu-pop{
+        margin-top: 15px !important;
+    }
+    .common-form{
+        display: block;
+        width: 300px !important; //300px
+        padding: 35px !important;
+        .form-title{
+            text-align: center;
+        }
+        input[type="submit"]{
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    } 
+    .main-menu{
         li{
             a{
                 padding-left: 20px !important;
@@ -727,6 +746,7 @@ input{
    .f-email{
         text-align: center !important;
         margin-top: 25px;
+        margin-left: 0 !important;
    }
    .f-copyright{
         text-align: center !important;

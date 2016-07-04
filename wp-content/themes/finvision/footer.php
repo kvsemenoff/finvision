@@ -41,13 +41,13 @@
 						<a href="/?p=18#map">На карте</a>
 					</div>
 				</div>	
-				<div class="col-md-5 col-sm-12 col-xs-12">
+				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="f-contacts">
 						<a href="tel:+73453455465" class="a-zvon">+7 (345) 345-54-65 </a> <span class="hidden-sm hidden-xs">&nbsp; | &nbsp;</span> <a href="tel:+73453455465" class="a-zvon"> +7 (435) 345-54-65</a>   
 						<a href="#zvonok" name="modal" class="a-zakaz">Заказать бесплатную консультацию</a>           
 					</div>
 				</div>	
-				<div class="col-md-1 col-sm-12 col-xs-12">
+				<div class="col-md-2 col-sm-12 col-xs-12">
 					<div class="f-email ah-f-email">
 						<a href="mailto:contacts@mail.ru" class="emailei">contacts@mail.ru</a>
 					</div>

@@ -55,7 +55,7 @@
 
 						<div class="menu-list-pressed">
 							<div class="ho-contact-box-pop">
-		    					<span class="tel">+7 (499) 324 - 54 -54</span> <br>
+								<a href="tel:+7 (499) 324 54 54"><span class="tel">+7 (499) 324 - 54 -54</span></a><br>
 		    					<a href="#zvonok" name="modal">Заказать консультацию</a>
 		    				</div>
 		    				<ul class="main-menu-pop">
@@ -102,7 +102,7 @@
     			</div>
     			<div class="col-md-3 hidden-sm hidden-xs">
     				<div class="ho-contact-box">
-    					<span class="tel">+7 (499) 324 - 54 -54</span> <br>
+    					<a href="tel:+7 (499) 324 54 54"><span class="tel">+7 (499) 324 - 54 -54</span></a> <br>
     					<a href="#zvonok" name="modal">Заказать консультацию</a>
     				</div>
     			</div>
