@@ -11,7 +11,7 @@ Template name: Каталог
 		<div class="row no-gutter">
 			<div class="col-md-12 col-sm-12 col-xs-12 ah-optowrapper">
 				<div class="ah-contact-margin"><?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' - '); ?></div>
-				<span class="ah-catalog-title">Каталог товаров</span>
+				<span class="ah-catalog-title ah-h1">Каталог товаров</span>
 				<div class="ah-line5"></div>
 				<div class="anz-product ah-product1">
 					<span>Мы показываем только лучшие модели и только для Вас</span>
