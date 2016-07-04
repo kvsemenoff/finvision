@@ -377,7 +377,7 @@ function kama_breadcrumbs( $sep = '', $l10n = array(), $args = array() ){
         }
         // если это запись, и у нее нет ни одного термина
         elseif( is_singular() )
-            $out = __show_post_title( $args->show_post_title, $post->post_title );
+            $out = $hierarchical_post_attach_out . sprintf( $linkpatt, "/каталог/", "Каталог" ) . $sep . __show_post_title( $args->show_post_title, $post->post_title );
     }
 
     $home_after = '';
